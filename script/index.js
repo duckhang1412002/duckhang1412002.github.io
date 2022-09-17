@@ -5,8 +5,7 @@ $('#lich-hoat-dong .owl-carousel').owlCarousel({
     padding: 16,
     nav: true,
     navText: [
-      '<i class="fa fa-angle-left" aria-hidden="true"></i>',
-      '<i class="fa fa-angle-right" aria-hidden="true"></i>'
+      "<img src='./img/prev.png'>","<img src='./img/next.png'>"
     ],
     navContainer: '#lich-hoat-dong .custom-nav',
     responsive: {
@@ -50,11 +49,13 @@ $('#lich-hoat-dong .owl-carousel').owlCarousel({
     nav: false,
     responsive: {
       0: {
-        items: 1
+        items: 1,
+        loop: true,
+        autoplay: 1000,
+        smartSpeed: 2000
       },
       768: {
-        items: 3,
-        mouseDrag: false
+        items: 3
       }
     }
 
