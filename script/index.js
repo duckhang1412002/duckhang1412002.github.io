@@ -24,6 +24,7 @@ $('#lich-hoat-dong .owl-carousel').owlCarousel({
     loop: true,
     margin: 0,
     nav: true,
+    autoplay: 2000,
     navText: [
       '<i class="fa fa-angle-left" aria-hidden="true"></i>',
       '<i class="fa fa-angle-right" aria-hidden="true"></i>'
