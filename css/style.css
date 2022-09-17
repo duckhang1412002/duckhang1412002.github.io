@@ -37,18 +37,15 @@ header {
   }
   
   .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
+    transform: translate(0, 12px) rotate(-45deg);
   }
   
-  .change .bar2 {
-    opacity: 0;
-  }
+  .change .bar2 {opacity: 0;}
   
   .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
+    transform: translate(0, -11px) rotate(45deg);
   }
+
   
   .rep-menu {
     display: none;
@@ -108,10 +105,7 @@ body {
         Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-style: normal;
 }
-p {
-    font-weight: 500;
-    letter-spacing: 0.01em;
-}
+
 
 .ScrollPanel {
     /* width: 303px; */
@@ -119,8 +113,27 @@ p {
     border: 1px solid #fe4600;
     overflow: hidden;
 }
+.ScrollPanelDiamond {
+    /* width: 303px; */
+    height: 550px;
+    border: 1px solid #757575;
+    overflow: hidden;
+}
+.ScrollPanelGold {
+    /* width: 303px; */
+    height: 550px;
+    border: 1px solid #FEB700;
+    overflow: hidden;
+}
+.ScrollPanelSilver {
+    /* width: 303px; */
+    height: 550px;
+    border: 1px solid #E0E0E0;
+    overflow: hidden;
+}
 
 .ScrollPanel img {
+    padding: 0px 10px 0px 10px;
     margin: auto;
     display: block;
      width: 275px;
@@ -134,11 +147,11 @@ p {
 
 .ScrollContent {
     position: relative;
-    animation: Scrolling 10s linear infinite;
-    -o-animation: Scrolling 10s linear infinite;
-    -ms-animation: Scrolling 10s linear infinite;
-    -moz-animation: Scrolling 10s linear infinite;
-    -webkit-animation: Scrolling 10s linear infinite;
+    animation: Scrolling 15s linear infinite;
+    -o-animation: Scrolling 15s linear infinite;
+    -ms-animation: Scrolling 15s linear infinite;
+    -moz-animation: Scrolling 15s linear infinite;
+    -webkit-animation: Scrolling 15s linear infinite;
 }
 
 .ScrollContent:hover {
@@ -203,8 +216,12 @@ p {
     padding-right: 4px;
 }
 
+.Person img {
+    padding: 0px 10px 0px 10px;
+}
 .Person p {
     text-align: center;
+    font-weight: 500;
 }
 
 .Person .name {
@@ -355,9 +372,8 @@ p {
     margin:auto;
     /* width: 375px; */
      height: 490px; 
-    border: 1px solid #fe4600;
+    border-bottom: 1px solid #fe4600;
     overflow: hidden;
-   
 }
 
  .MobileContent img {
@@ -515,11 +531,6 @@ p {
     right: 0;
 }
 
-@media screen and (max-width: 1023px) {
-    .owl-theme .custom-nav {
-        top: 30%;
-    } 
-}
 
 .owl-prev,
 .owl-next {
@@ -529,6 +540,22 @@ p {
     border: none;
     z-index: 100;
 }
+
+@media screen and (max-width: 1023px) {
+    .owl-theme .custom-nav {
+        top: 30%;
+    } 
+}
+
+@media screen and (max-width: 450px) {
+    .owl-theme .custom-nav {
+        top: 20%;
+    } 
+    .owl-prev, .owl-next {
+    height: 75px;
+    }
+}
+
 
 #lich-hoat-dong .owl-prev, #lich-hoat-dong .owl-next {
     background: rgba(0, 0, 0, 0.55);
@@ -549,8 +576,8 @@ i {
 }
 
 .owl-dots {
-    margin-top: 4rem;
-    margin-bottom: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
     margin-left: auto;
     margin-right: auto;
 }
