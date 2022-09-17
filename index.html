@@ -18,14 +18,9 @@
 </head>
 
 <body class="font-sans">
-  <header class="mx-auto w-full max-w-screen-2xl">
-    <nav class="pt-6 flex flex-col justify-between lg:flex-row lg:justify-start lg:items-center">
-      <div class="logo basis-1/6 pl-6 lg:pl-12">
-        <a class="" href="#" alt="Logo">
-          <img src="/img/Logo.png">
-        </a>
-      </div>
-      <button class="absolute top-6 right-6 lg:hidden dropdown basis-1/6 flex items-center cursor-pointer px-3 sm:px-10"
+  <header class="w-full">
+    <div class="header-content mx-auto max-w-screen-xl px-0 md:px-4">
+      <button class="absolute top-[20px] right-[20px] lg:hidden dropdown flex cursor-pointer"
         onclick="myFunction(this)">
         <div class="space-y-2">
           <span class="block w-8 h-1 bg-[#FE4600] bar1"></span>
@@ -33,1134 +28,1148 @@
           <span class="block w-8 h-1 bg-[#FE4600] bar3"></span>
         </div>
       </button>
-      <div id="menu" class="h-full bg-[#f9f9f9] lg:bg-inherit py-4 lg:pt-0 pl-6 z-50">
-        <ul id="nav-list"
-          class="text-[#757575] basis-6/6 flex flex-col lg:flex-row lg:items-center gap-2 lg:gap-8 lg:justify-endtext-sm font-medium">
-          <li>
-            <a href="#"
-              class="text-[#292929] py-1 relative after:absolute after:bottom-0 after:left-0 lg:after:bg-[#FE4600] after:h-0.5 after:w-0 after:w-full after:transition-all after:ease-in-out after:duration-300">Trang
-              chủ</a>
-          </li>
-          <li class="dropdown">
-            <a href="#"
-              class="hover:text-[#292929] py-1 relative after:absolute after:bottom-0 after:left-0 after:bg-[#FE4600] after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:ease-in-out after:duration-300">Giới
-              thiệu</a>
-            <ul class="dropdown-content">
-              <li>
-                <a href="#" class="flex p-2 font-medium rounded-md min-w-max hover:bg-[#FE4600] hover:text-white">Giới
-                  thiệu về chúng tôi</a>
-              </li>
-              <li>
-                <a href="#" class="flex p-2 font-medium rounded-md min-w-max hover:bg-[#FE4600] hover:text-white">Tầm
-                  nhìn và sứ mệnh</a>
-              </li>
-              <li>
-                <a href="#" class="flex p-2 font-medium rounded-md min-w-max hover:bg-[#FE4600] hover:text-white">Phương
-                  châm hoạt động</a>
-              </li>
-              <li>
-                <a href="#" class="flex p-2 font-medium rounded-md min-w-max hover:bg-[#FE4600] hover:text-white">Điều
-                  lệ</a>
-              </li>
-              <li>
-                <a href="#" class="flex p-2 font-medium rounded-md min-w-max hover:bg-[#FE4600] hover:text-white">Quy
-                  chế</a>
-              </li>
-              <li>
-                <a href="#" class="flex p-2 font-medium rounded-md min-w-max hover:bg-[#FE4600] hover:text-white">Thông
-                  báo</a>
-              </li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#"
-              class="hover:text-[#292929] py-1 relative after:absolute after:bottom-0 after:left-0 after:bg-[#FE4600] after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:ease-in-out after:duration-300">Hội
-              viên</a>
-            <ul class="dropdown-content">
-              <li>
-                <a href="#" class="flex p-2 font-medium rounded-md min-w-max hover:bg-[#FE4600] hover:text-white">Danh
-                  sách hội viên</a>
-              </li>
-              <li>
-                <a href="#" class="flex p-2 font-medium rounded-md min-w-max hover:bg-[#FE4600] hover:text-white">Quy
-                  chế hội viên</a>
-              </li>
-              <li>
-                <a href="#" class="flex p-2 font-medium rounded-md min-w-max hover:bg-[#FE4600] hover:text-white">Quyền
-                  lợi hội viên</a>
-              </li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#"
-              class="hover:text-[#292929] py-1 relative after:absolute after:bottom-0 after:left-0 after:bg-[#FE4600] after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:ease-in-out after:duration-300">Tin
-              tức</a>
-            <ul class="dropdown-content">
-              <li>
-                <a href="#" class="flex p-2 font-medium rounded-md min-w-max hover:bg-[#FE4600] hover:text-white">Tìm
-                  câu lạc bộ</a>
-              </li>
-              <li>
-                <a href="#" class="flex p-2 font-medium rounded-md min-w-max hover:bg-[#FE4600] hover:text-white">Gương
-                  sáng doanh nhân</a>
-              </li>
-              <li>
-                <a href="#" class="flex p-2 font-medium rounded-md min-w-max hover:bg-[#FE4600] hover:text-white">Tìm về
-                  cội nguồn</a>
-              </li>
-              <li>
-                <a href="#" class="flex p-2 font-medium rounded-md min-w-max hover:bg-[#FE4600] hover:text-white">Khuyến
-                  học</a>
-              </li>
-              <li>
-                <a href="#" class="flex p-2 font-medium rounded-md min-w-max hover:bg-[#FE4600] hover:text-white">Thiện
-                  nguyện</a>
-              </li>
-              <li>
-                <a href="#" class="flex p-2 font-medium rounded-md min-w-max hover:bg-[#FE4600] hover:text-white">Thể
-                  thao văn hóa</a>
-              </li>
-              <li>
-                <a href="#" class="flex p-2 font-medium rounded-md min-w-max hover:bg-[#FE4600] hover:text-white">Đối
-                  ngoại</a>
-              </li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#"
-              class="hover:text-[#292929] py-1 relative after:absolute after:bottom-0 after:left-0 after:bg-[#FE4600] after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:ease-in-out after:duration-300">Kết
-              nối giao thương</a>
-            <ul class="dropdown-content">
-              <li>
-                <a href="#" class="flex p-2 font-medium rounded-md min-w-max hover:bg-[#FE4600] hover:text-white">Hội
-                  thảo đào tạo</a>
-              </li>
-              <li>
-                <a href="#" class="flex p-2 font-medium rounded-md min-w-max hover:bg-[#FE4600] hover:text-white">Tìm
-                  nhà đầu tư, phân phối</a>
-              </li>
-              <li>
-                <a href="#" class="flex p-2 font-medium rounded-md min-w-max hover:bg-[#FE4600] hover:text-white">Cần
-                  bán</a>
-              </li>
-              <li>
-                <a href="#" class="flex p-2 font-medium rounded-md min-w-max hover:bg-[#FE4600] hover:text-white">Cần
-                  mua</a>
-              </li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#"
-              class="hover:text-[#292929] py-1 relative after:absolute after:bottom-0 after:left-0 after:bg-[#FE4600] after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:ease-in-out after:duration-300">Kết
-              nối việc làm</a>
-            <ul class="dropdown-content">
-              <li>
-                <a href="#" class="flex p-2 font-medium rounded-md min-w-max hover:bg-[#FE4600] hover:text-white">Tìm
-                  việc</a>
-              </li>
-              <li>
-                <a href="#" class="flex p-2 font-medium rounded-md min-w-max hover:bg-[#FE4600] hover:text-white">Đăng
-                  tuyển dụng</a>
-              </li>
-              <li>
-                <a href="#" class="flex p-2 font-medium rounded-md min-w-max hover:bg-[#FE4600] hover:text-white">Bài
-                  tuyển dụng</a>
-              </li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#"
-              class="hover:text-[#292929] py-1 relative after:absolute after:bottom-0 after:left-0 after:bg-[#FE4600] after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:ease-in-out after:duration-300">Thư
-              viện</a>
-            <ul class="dropdown-content">
-              <li>
-                <a href="#"
-                  class="flex p-2 font-medium rounded-md min-w-max hover:bg-[#FE4600] hover:text-white">Video</a>
-              </li>
-              <li>
-                <a href="#" class="flex p-2 font-medium rounded-md min-w-max hover:bg-[#FE4600] hover:text-white">Hình
-                  ảnh hoạt động</a>
-              </li>
-              <li>
-                <a href="#" class="flex p-2 font-medium rounded-md min-w-max hover:bg-[#FE4600] hover:text-white">Sinh
-                  hoạt tháng</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </nav>
+      <nav class="pt-6 flex flex-col lg:flex-row lg:items-center">
+        <div class="logo basis-1/6 pl-4 md:pl-0">
+          <a class="" href="#" alt="Logo">
+            <img src="/img/Logo.png">
+          </a>
+        </div>
+        <div id="menu" class="h-full bg-[#f9f9f9] lg:bg-inherit py-4 lg:pt-0 pl-6 z-50">
+          <ul id="nav-list"
+            class="text-[#757575] basis-6/6 flex flex-col lg:flex-row lg:items-center gap-10 lg:gap-8 lg:justify-endtext-sm font-medium">
+            <li>
+              <a href="#"
+                class="text-[#292929] py-1 relative after:absolute after:bottom-0 after:left-0 lg:after:bg-[#FE4600] after:h-0.5 after:w-0 after:w-full after:transition-all after:ease-in-out after:duration-300">Trang
+                chủ</a>
+            </li>
+            <li class="dropdown">
+              <a href="#"
+                class="hover:text-[#292929] py-1 relative after:absolute after:bottom-0 after:left-0 after:bg-[#FE4600] after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:ease-in-out after:duration-300">Giới
+                thiệu</a>
+              <ul class="dropdown-content">
+                <li>
+                  <a href="#" class="pl-6 pr-6 flex p-2 font-medium min-w-max hover:bg-[#FE4600] hover:text-white">Giới
+                    thiệu về chúng tôi</a>
+                </li>
+                <li>
+                  <a href="#" class="pl-6 pr-6 flex p-2 font-medium min-w-max hover:bg-[#FE4600] hover:text-white">Tầm
+                    nhìn và sứ mệnh</a>
+                </li>
+                <li>
+                  <a href="#"
+                    class="pl-6 pr-6 flex p-2 font-medium min-w-max hover:bg-[#FE4600] hover:text-white">Phương
+                    châm hoạt động</a>
+                </li>
+                <li>
+                  <a href="#" class="pl-6 pr-6 flex p-2 font-medium min-w-max hover:bg-[#FE4600] hover:text-white">Điều
+                    lệ</a>
+                </li>
+                <li>
+                  <a href="#" class="pl-6 pr-6 flex p-2 font-medium min-w-max hover:bg-[#FE4600] hover:text-white">Quy
+                    chế</a>
+                </li>
+                <li>
+                  <a href="#"
+                    class="pl-6 pr-6 flex p-2 font-medium min-w-max hover:bg-[#FE4600] hover:text-white">Thông
+                    báo</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#"
+                class="hover:text-[#292929] py-1 relative after:absolute after:bottom-0 after:left-0 after:bg-[#FE4600] after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:ease-in-out after:duration-300">Hội
+                viên</a>
+              <ul class="dropdown-content">
+                <li>
+                  <a href="#" class="pl-6 pr-6 flex p-2 font-medium min-w-max hover:bg-[#FE4600] hover:text-white">Danh
+                    sách hội viên</a>
+                </li>
+                <li>
+                  <a href="#" class="pl-6 pr-6 flex p-2 font-medium min-w-max hover:bg-[#FE4600] hover:text-white">Quy
+                    chế hội viên</a>
+                </li>
+                <li>
+                  <a href="#"
+                    class="pl-6 pr-6 flex p-2 font-medium min-w-max hover:bg-[#FE4600] hover:text-white">Quyền
+                    lợi hội viên</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#"
+                class="hover:text-[#292929] py-1 relative after:absolute after:bottom-0 after:left-0 after:bg-[#FE4600] after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:ease-in-out after:duration-300">Tin
+                tức</a>
+              <ul class="dropdown-content">
+                <li>
+                  <a href="#" class="pl-6 pr-6 flex p-2 font-medium min-w-max hover:bg-[#FE4600] hover:text-white">Tìm
+                    câu lạc bộ</a>
+                </li>
+                <li>
+                  <a href="#"
+                    class="pl-6 pr-6 flex p-2 font-medium min-w-max hover:bg-[#FE4600] hover:text-white">Gương
+                    sáng doanh nhân</a>
+                </li>
+                <li>
+                  <a href="#" class="pl-6 pr-6 flex p-2 font-medium min-w-max hover:bg-[#FE4600] hover:text-white">Tìm
+                    về
+                    cội nguồn</a>
+                </li>
+                <li>
+                  <a href="#"
+                    class="pl-6 pr-6 flex p-2 font-medium min-w-max hover:bg-[#FE4600] hover:text-white">Khuyến
+                    học</a>
+                </li>
+                <li>
+                  <a href="#"
+                    class="pl-6 pr-6 flex p-2 font-medium min-w-max hover:bg-[#FE4600] hover:text-white">Thiện
+                    nguyện</a>
+                </li>
+                <li>
+                  <a href="#" class="pl-6 pr-6 flex p-2 font-medium min-w-max hover:bg-[#FE4600] hover:text-white">Thể
+                    thao văn hóa</a>
+                </li>
+                <li>
+                  <a href="#" class="pl-6 pr-6 flex p-2 font-medium min-w-max hover:bg-[#FE4600] hover:text-white">Đối
+                    ngoại</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#"
+                class="hover:text-[#292929] py-1 relative after:absolute after:bottom-0 after:left-0 after:bg-[#FE4600] after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:ease-in-out after:duration-300">Kết
+                nối giao thương</a>
+              <ul class="dropdown-content">
+                <li>
+                  <a href="#" class="pl-6 pr-6 flex p-2 font-medium min-w-max hover:bg-[#FE4600] hover:text-white">Hội
+                    thảo đào tạo</a>
+                </li>
+                <li>
+                  <a href="#" class="pl-6 pr-6 flex p-2 font-medium min-w-max hover:bg-[#FE4600] hover:text-white">Tìm
+                    nhà đầu tư, phân phối</a>
+                </li>
+                <li>
+                  <a href="#" class="pl-6 pr-6 flex p-2 font-medium min-w-max hover:bg-[#FE4600] hover:text-white">Cần
+                    bán</a>
+                </li>
+                <li>
+                  <a href="#" class="pl-6 pr-6 flex p-2 font-medium min-w-max hover:bg-[#FE4600] hover:text-white">Cần
+                    mua</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#"
+                class="hover:text-[#292929] py-1 relative after:absolute after:bottom-0 after:left-0 after:bg-[#FE4600] after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:ease-in-out after:duration-300">Kết
+                nối việc làm</a>
+              <ul class="dropdown-content">
+                <li>
+                  <a href="#" class="pl-6 pr-6 flex p-2 font-medium min-w-max hover:bg-[#FE4600] hover:text-white">Tìm
+                    việc</a>
+                </li>
+                <li>
+                  <a href="#" class="pl-6 pr-6 flex p-2 font-medium min-w-max hover:bg-[#FE4600] hover:text-white">Đăng
+                    tuyển dụng</a>
+                </li>
+                <li>
+                  <a href="#" class="pl-6 pr-6 flex p-2 font-medium min-w-max hover:bg-[#FE4600] hover:text-white">Bài
+                    tuyển dụng</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#"
+                class="hover:text-[#292929] py-1 relative after:absolute after:bottom-0 after:left-0 after:bg-[#FE4600] after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:ease-in-out after:duration-300">Thư
+                viện</a>
+              <ul class="dropdown-content">
+                <li>
+                  <a href="#"
+                    class="pl-6 pr-6 flex p-2 font-medium min-w-max hover:bg-[#FE4600] hover:text-white">Video</a>
+                </li>
+                <li>
+                  <a href="#" class="pl-6 pr-6 flex p-2 font-medium min-w-max hover:bg-[#FE4600] hover:text-white">Hình
+                    ảnh hoạt động</a>
+                </li>
+                <li>
+                  <a href="#" class="pl-6 pr-6 flex p-2 font-medium min-w-max hover:bg-[#FE4600] hover:text-white">Sinh
+                    hoạt tháng</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
-  <!----------------------------Banner PC----------------------------->
-  <section id="banner-section" class="mx-auto w-full max-w-screen-2xl">
-    <div id="bannerPC">
-      <div class="carousel-wrap">
-        <div class="banner">
-          <div class="owl-carousel owl-theme">
-            <div class="item">
-              <div>
-                <img src="/img/banner1.png" class="h-[375px] lg:h-[668px]" alt="" />
+    <!----------------------------Banner----------------------------->
+    <section id="banner-section" class="mx-auto mt-8 md:mt-10 w-full max-w-screen-2xl">
+      <div id="bannerPC">
+        <div class="carousel-wrap">
+          <div class="banner">
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <div>
+                  <img src="/img/banner1.png" class="h-[375px] lg:h-[668px] display-block " alt="" />
+                </div>
               </div>
-            </div>
-            <div class="item">
-              <div>
-                <img src="/img/banner1.png" class="h-[375px] lg:h-[668px]" alt="" />
+              <div class="item">
+                <div>
+                  <img src="/img/banner1.png" class="h-[375px] lg:h-[668px]" alt="" />
+                </div>
               </div>
-            </div>
-            <div class="item">
-              <div>
-                <img src="/img/banner1.png" class="h-[375px] lg:h-[668px]" alt="" />
+              <div class="item">
+                <div>
+                  <img src="/img/banner1.png" class="h-[375px] lg:h-[668px]" alt="" />
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div
-        class="banner-title w-100 text-center font-[350] text-[1.25rem] leading-[3rem] lg:leading-[5.125rem] lg:text-[3.625rem]">
-        <div class="relateive mx-auto text-white">
-          <h1 class="absolute mx-auto left-0 right-0 top-[9rem] lg:top-[25rem] z-10 font-[700]">
-            Tự nguyện - Tâm huyết - Cội nguồn<br>
-            Đoàn kết - Phát triển
-          </h1>
-          <a href="javascript:;"
-            class="leading-[20px] w-[10.75rem] py-4 bg-[#FE4600] absolute mx-auto left-0 right-0 top-[21rem] lg:top-[39rem] font-[700] text-[1rem] z-10 border-solid border-white border-[1px] rounded">Đăng
-            kí hội viên</a>
+        <div
+          class="banner-title w-100 text-center font-[350] text-[1.25rem] leading-[3rem] lg:leading-[5.125rem] lg:text-[3.625rem]">
+          <div class="relateive mx-auto text-white">
+            <h1 class="absolute mx-auto left-0 right-0 top-[9rem] lg:top-[25rem] z-10 font-[700]">
+              Tự nguyện - Tâm huyết - Cội nguồn<br>
+              Đoàn kết - Phát triển
+            </h1>
+            <a href="javascript:;"
+              class="leading-[20px] w-[10.75rem] py-4 bg-[#FE4600] absolute mx-auto left-0 right-0 top-[21rem] lg:top-[39rem] font-[700] text-[1rem] z-10 border-solid border-white border-[1px] rounded">Đăng
+              kí hội viên</a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!------------------------Main Content------------------------------------>
-  <section id="main-content-section" class="mt-20 mx-auto w-full max-w-screen-xl">
-    <main class="grid grid-cols-12 gap-8 pt-1">
-      <div class="col-span-full lg:col-span-9">
-        <div class="grid grid-cols-9 gap-8">
-          <div class="col-span-full px-4 lg:px-0">
-            <h1 class="text-[24px] xl:text-[40px] font-[700] xl:font-[500] pb-10 text-center xl:text-left">
-              CHÚNG TÔI LÀ AI?
+    </section>
+    <!------------------------Main Content------------------------------------>
+    <section id="main-content-section" class="mt-20 mx-auto w-full max-w-screen-xl">
+      <main class="grid grid-cols-12 gap-8 pt-1">
+        <div class="col-span-full lg:col-span-9">
+          <div class="grid grid-cols-9 gap-8">
+            <div class="col-span-full px-4 lg:pr-0">
+              <h1 class="text-[24px] xl:text-[40px] font-[700] xl:font-[500] pb-10 text-center xl:text-left">
+                CHÚNG TÔI LÀ AI?
+              </h1>
+              <img src="./img/whoarewe.png" alt="" />
+              <p
+                class="xl:pl-[0px] pt-[30px] text-[16px] xl:w-[inherit] font-[500] leading-6 tracking-[0.02em]">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy text
+                ever since the 1500s, when an unknown printer took a galley of
+                type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop.
+              </p>
+              <p class="text-[16px] text-[#A8A8A8] pt-[40px] xl:pl-[0px]">
+                <a href="#!">
+                  Xem thêm <img class="ml-3 inline" src="/img/Arrow-3.svg">
+                </a>
+              </p>
+            </div>
+            <div class="col-span-full display-block lg:hidden">
+              <!----------Carousel Scrolling Mobile---------------->
+              <div class="visible-mobile">
+                <div class="switch-button-carousel">
+                  <div class="icon-button grid grid-cols-7">
+                    <div class="icon2 col-span-2 mx-auto">
+                      <img src="img/icon/cake.svg" alt="">
+                    </div>
+                    <div class="icon2 col-span-3 mx-auto">
+                      <img src="img/icon/user.svg" alt="">
+                    </div>
+                    <div class="icon2 col-span-2 mx-auto">
+                      <img src="img/icon/play.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="button-switch grid grid-cols-7 mt-1">
+                    <div class="btn icon2 col-span-2">
+                      <button class="w-full" id="birthdayBTN" style="background-color:#FE4600; color: white;">
+                        SINH NHẬT
+                      </button>
+                    </div>
+                    <div class="btn icon2 col-span-3">
+                      <button class="w-full" id="memberBTN">
+                        THÀNH VIÊN MỚI
+                      </button>
+                    </div>
+                    <div class="btn icon2 col-span-2">
+                      <button class="w-full" id="mediaBTN">MEDIA</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="CarouselMobile" id="Birthday">
+                <div class="ScrollPanelMobile">
+                  <div class="ScrollContentMobile">
+                    <div class="MobileContent gap-[1rem]">
+                      <div class="min-w-full">
+                      </div>
+                      <div>
+                        <img src="img/man.png" />
+                        <p class="name">NGÔ VIỆT BẮC</p>
+                        <p class="workfield">Lĩnh vực hoạt động</p>
+                        <p class="job">
+                          Tư vấn pháp luật <br />
+                          Bào chữa tại tòa
+                        </p>
+                        <p class="phone"> <i class="fa fa-phone fa-sm" aria-hidden="true"></i>(+84) 908 954 179</p>
+                        <p class="email"> <i class="fa fa-at fa-sm" aria-hidden="true"></i>luatsungovietbac@gmail.com</p>
+                      </div>
+                      <div>
+                        <img src="img/man.png" />
+                        <p class="name">NGÔ VIỆT BẮC</p>
+                        <p class="workfield">Lĩnh vực hoạt động</p>
+                        <p class="job">
+                          Tư vấn pháp luật <br />
+                          Bào chữa tại tòa
+                        </p>
+                        <p class="phone"> <i class="fa fa-phone fa-sm" aria-hidden="true"></i>(+84) 908 954 179</p>
+                        <p class="email"><i class="fa fa-at fa-sm" aria-hidden="true"></i>luatsungovietbac@gmail.com</p>
+                      </div>
+                      <div>
+                        <img src="img/man.png" />
+                        <p class="name">NGÔ VIỆT HÓA</p>
+                        <p class="workfield">Lĩnh vực hoạt động</p>
+                        <p class="job">
+                          Tư vấn pháp luật <br />
+                          Bào chữa tại tòa
+                        </p>
+                        <p class="phone"> <i class="fa fa-phone fa-sm" aria-hidden="true"></i>(+84) 908 954 179</p>
+                        <p class="email"><i class="fa fa-at fa-sm" aria-hidden="true"></i>luatsungovietbac@gmail.com</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="CarouselMobile" id="Member" style="display:none">
+                <div class="ScrollPanelMobile">
+                  <div class="ScrollContentMobile">
+                    <div class="MobileContent gap-[1rem]">
+                      <div class="min-w-[100%]">
+                      </div>
+                      <div>
+                        <img src="img/man.png" />
+                        <p class="name">NGÔ VIỆT BẮC</p>
+                        <p class="workfield">Lĩnh vực hoạt động</p>
+                        <p class="job">
+                          Tư vấn pháp luật <br />
+                          Bào chữa tại tòa
+                        </p>
+                        <p class="phone"> <i class="fa fa-phone fa-sm" aria-hidden="true"></i>(+84) 908 954 179</p>
+                        <p class="email"><i class="fa fa-at fa-sm" aria-hidden="true"></i>luatsungovietbac@gmail.com</p>
+                      </div>
+                      <div>
+                        <img src="img/man.png" />
+                        <p class="name">NGÔ VIỆT BẮC</p>
+                        <p class="workfield">Lĩnh vực hoạt động</p>
+                        <p class="job">
+                          Tư vấn pháp luật <br />
+                          Bào chữa tại tòa
+                        </p>
+                        <p class="phone"> <i class="fa fa-phone fa-sm" aria-hidden="true"></i>(+84) 908 954 179</p>
+                        <p class="email"><i class="fa fa-at fa-sm" aria-hidden="true"></i>luatsungovietbac@gmail.com</p>
+                      </div>
+                      <div>
+                        <img src="img/man.png" />
+                        <p class="name">NGÔ VIỆT HÓA</p>
+                        <p class="workfield">Lĩnh vực hoạt động</p>
+                        <p class="job">
+                          Tư vấn pháp luật <br />
+                          Bào chữa tại tòa
+                        </p>
+                        <p class="phone"> <i class="fa fa-phone fa-sm" aria-hidden="true"></i>(+84) 908 954 179</p>
+                        <p class="email"><i class="fa fa-at fa-sm" aria-hidden="true"></i>luatsungovietbac@gmail.com</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="CarouselMobile" id="Media" style="display:none">
+                <div class="ScrollPanelMobile">
+                  <div class="ScrollContentMobile">
+                    <div class="MobileContent gap-[1rem]">
+                      <div class="min-w-[100%]">
+                      </div>
+                      <div>
+                        <img src="img/tuthien.jpg" />
+                        <p class="name">NGÔ VIỆT BẮC</p>
+                        <p class="workfield">Lĩnh vực hoạt động</p>
+                        <p class="job">
+                          Tư vấn pháp luật <br />
+                          Bào chữa tại tòa
+                        </p>
+                        <p class="phone"> <i class="fa fa-phone fa-sm" aria-hidden="true"></i>(+84) 908 954 179</p>
+                        <p class="email"><i class="fa fa-at fa-sm" aria-hidden="true"></i>luatsungovietbac@gmail.com</p>
+                      </div>
+                      <div>
+                        <img src="img/tuthien.jpg" />
+                        <p class="name">NGÔ VIỆT BẮC</p>
+                        <p class="workfield">Lĩnh vực hoạt động</p>
+                        <p class="job">
+                          Tư vấn pháp luật <br />
+                          Bào chữa tại tòa
+                        </p>
+                        <p class="phone"> <i class="fa fa-phone fa-sm" aria-hidden="true"></i>(+84) 908 954 179</p>
+                        <p class="email"><i class="fa fa-at fa-sm" aria-hidden="true"></i>luatsungovietbac@gmail.com</p>
+                      </div>
+                      <div>
+                        <img src="img/tuthien.jpg" />
+                        <p class="name">NGÔ VIỆT HÓA</p>
+                        <p class="workfield">Lĩnh vực hoạt động</p>
+                        <p class="job">
+                          Tư vấn pháp luật <br />
+                          Bào chữa tại tòa
+                        </p>
+                        <p class="phone"> <i class="fa fa-phone fa-sm" aria-hidden="true"></i>(+84) 908 954 179</p>
+                        <p class="email"><i class="fa fa-at fa-sm" aria-hidden="true"></i>luatsungovietbac@gmail.com</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="my-6 bg-[#FE4600] text-center py-4 text-white text-[20px]">
+                <p class="title">NHÀ TÀI TRỢ</p>
+              </div>
+              <div class="visible-mobile">
+                <div class="switch-button-carousel">
+                  <div class="grid grid-cols-7">
+                    <div class="icon2 col-span-2 mx-auto">
+                      <img src="img/icon/diamond.svg" alt="">
+                    </div>
+                    <div class="icon2 col-span-3 mx-auto">
+                      <img src="img/icon/gold.svg" alt="">
+                    </div>
+                    <div class="icon2 col-span-2 mx-auto">
+                      <img src="img/icon/silver.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="grid grid-cols-7 mt-1">
+                  <div class="btn col-span-2">
+                    <button class="w-full" id="diamondBTN" style="background-color:#FE4600; color: white;">
+                      KIM CƯƠNG </button>
+                  </div>
+                  <div class="btn col-span-3">
+                    <button class="w-full" id="goldBTN">
+                      VÀNG </button>
+                  </div>
+                  <div class="btn col-span-2">
+                    <button class="w-full" id="silverBTN">BẠC</button>
+                  </div>
+                </div>
+              </div>
+              <div class="CarouselMobile" id="Diamond">
+                <div class="ScrollPanelMobile">
+                  <div class="ScrollContentMobile">
+                    <div class="MobileContent gap-[1rem]">
+                      <div class="min-w-[100%]">
+                      </div>
+                      <div>
+                        <img src="img/man.png" />
+                        <p class="name">NGÔ VIỆT BẮC</p>
+                        <p class="workfield">Lĩnh vực hoạt động</p>
+                        <p class="job">
+                          Tư vấn pháp luật <br />
+                          Bào chữa tại tòa
+                        </p>
+                        <p class="phone"> <i class="fa fa-phone fa-sm" aria-hidden="true"></i>(+84) 908 954 179</p>
+                        <p class="email"><i class="fa fa-at fa-sm" aria-hidden="true"></i>luatsungovietbac@gmail.com</p>
+                      </div>
+                      <div>
+                        <img src="img/man.png" />
+                        <p class="name">NGÔ VIỆT BẮC</p>
+                        <p class="workfield">Lĩnh vực hoạt động</p>
+                        <p class="job">
+                          Tư vấn pháp luật <br />
+                          Bào chữa tại tòa
+                        </p>
+                        <p class="phone"> <i class="fa fa-phone fa-sm" aria-hidden="true"></i>(+84) 908 954 179</p>
+                        <p class="email"><i class="fa fa-at fa-sm" aria-hidden="true"></i>luatsungovietbac@gmail.com</p>
+                      </div>
+                      <div>
+                        <img src="img/man.png" />
+                        <p class="name">NGÔ VIỆT HÓA</p>
+                        <p class="workfield">Lĩnh vực hoạt động</p>
+                        <p class="job">
+                          Tư vấn pháp luật <br />
+                          Bào chữa tại tòa
+                        </p>
+                        <p class="phone"> <i class="fa fa-phone fa-sm" aria-hidden="true"></i>(+84) 908 954 179</p>
+                        <p class="email"><i class="fa fa-at fa-sm" aria-hidden="true"></i>luatsungovietbac@gmail.com</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="CarouselMobile" id="Gold" style="display:none">
+                <div class="ScrollPanelMobile">
+                  <div class="ScrollContentMobile">
+                    <div class="MobileContent gap-[1rem]">
+                      <div class="min-w-[100%]">
+                      </div>
+                      <div>
+                        <img src="img/man.png" />
+                        <p class="name">NGÔ VIỆT BẮC</p>
+                        <p class="workfield">Lĩnh vực hoạt động</p>
+                        <p class="job">
+                          Tư vấn pháp luật <br />
+                          Bào chữa tại tòa
+                        </p>
+                        <p class="phone"> <i class="fa fa-phone fa-sm" aria-hidden="true"></i>(+84) 908 954 179</p>
+                        <p class="email"><i class="fa fa-at fa-sm" aria-hidden="true"></i>luatsungovietbac@gmail.com</p>
+                      </div>
+                      <div>
+                        <img src="img/man.png" />
+                        <p class="name">NGÔ VIỆT BẮC</p>
+                        <p class="workfield">Lĩnh vực hoạt động</p>
+                        <p class="job">
+                          Tư vấn pháp luật <br />
+                          Bào chữa tại tòa
+                        </p>
+                        <p class="phone"> <i class="fa fa-phone fa-sm" aria-hidden="true"></i>(+84) 908 954 179</p>
+                        <p class="email"><i class="fa fa-at fa-sm" aria-hidden="true"></i>luatsungovietbac@gmail.com</p>
+                      </div>
+                      <div>
+                        <img src="img/man.png" />
+                        <p class="name">NGÔ VIỆT HÓA</p>
+                        <p class="workfield">Lĩnh vực hoạt động</p>
+                        <p class="job">
+                          Tư vấn pháp luật <br />
+                          Bào chữa tại tòa
+                        </p>
+                        <p class="phone"> <i class="fa fa-phone fa-sm" aria-hidden="true"></i>(+84) 908 954 179</p>
+                        <p class="email"><i class="fa fa-at fa-sm" aria-hidden="true"></i>luatsungovietbac@gmail.com</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="CarouselMobile" id="Silver" style="display:none">
+                <div class="ScrollPanelMobile">
+                  <div class="ScrollContentMobile">
+                    <div class="MobileContent gap-[1rem]">
+                      <div class="min-w-[100%]">
+                      </div>
+                      <div>
+                        <img src="img/man.png" />
+                        <p class="name">NGÔ VIỆT BẮC</p>
+                        <p class="workfield">Lĩnh vực hoạt động</p>
+                        <p class="job">
+                          Tư vấn pháp luật <br />
+                          Bào chữa tại tòa
+                        </p>
+                        <p class="phone"> <i class="fa fa-phone fa-sm" aria-hidden="true"></i>(+84) 908 954 179</p>
+                        <p class="email"><i class="fa fa-at fa-sm" aria-hidden="true"></i>luatsungovietbac@gmail.com</p>
+                      </div>
+                      <div>
+                        <img src="img/man.png" />
+                        <p class="name">NGÔ VIỆT BẮC</p>
+                        <p class="workfield">Lĩnh vực hoạt động</p>
+                        <p class="job">
+                          Tư vấn pháp luật <br />
+                          Bào chữa tại tòa
+                        </p>
+                        <p class="phone"> <i class="fa fa-phone fa-sm" aria-hidden="true"></i>(+84) 908 954 179</p>
+                        <p class="email"><i class="fa fa-at fa-sm" aria-hidden="true"></i>luatsungovietbac@gmail.com</p>
+                      </div>
+                      <div>
+                        <img src="img/man.png" />
+                        <p class="name">NGÔ VIỆT BẮC</p>
+                        <p class="workfield">Lĩnh vực hoạt động</p>
+                        <p class="job">
+                          Tư vấn pháp luật <br />
+                          Bào chữa tại tòa
+                        </p>
+                        <p class="phone"> <i class="fa fa-phone fa-sm" aria-hidden="true"></i>(+84) 908 954 179</p>
+                        <p class="email"><i class="fa fa-at fa-sm" aria-hidden="true"></i>luatsungovietbac@gmail.com</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-full px-4 lg:pr-0">
+            <h1
+              class="text-[24px] font-[700] xl:font-[500] pb-[32px] pt-[33px] text-center xl:text-left xl:text-[40px] xl:font-[500] xl:pt-[34px]">
+              LỊCH HOẠT ĐỘNG
             </h1>
-            <img src="./img/whoarewe.png" alt="" />
-            <p
-              class="xl:pl-[0px] pt-[30px] text-[16px] xl:w-[inherit] font-[400] leading-6 tracking-[0.02em]">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop.
-            </p>
-            <p class="text-[16px] text-[#A8A8A8] pt-[40px] xl:pl-[0px]">
+            <div class="carousel-wrap" id="lich-hoat-dong">
+              <div class="main-content">
+                <div class="owl-carousel owl-theme">
+                  <div class="item">
+                    <div>
+                      <img src="/img/guongsang1.png" class="w-full" alt="" />
+                      <div>
+                        <p class="text-[18px] text-[#FE4600DE] font-[600] pt-[16px]">
+                          Gương sáng doanh nhân
+                        </p>
+                        <p>
+                          Ra mắt CLB Doanh nhân <br />
+                          họ NGÔ khu vực Miền nam
+                        </p>
+                        <p class="text-[14px] text-[#A8A8A8] pt-[19px]">
+                          August 17, 2022
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div>
+                      <img src="/img/guongsang2.png" class="w-full" alt="" />
+                      <div>
+                        <p class="text-[18px] text-[#FE4600DE] font-[600] pt-[16px]">
+                          Gương sáng doanh nhân
+                        </p>
+                        <p>
+                          Ra mắt CLB Doanh nhân <br />
+                          họ NGÔ khu vực Miền nam
+                        </p>
+                        <p class="text-[14px] text-[#A8A8A8] pt-[19px]">
+                          August 17, 2022
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div>
+                      <img src="/img/guongsang3.png" class="w-full" alt="" />
+                      <div>
+                        <p class="text-[18px] text-[#FE4600DE] font-[600] pt-[16px]">
+                          Gương sáng doanh nhân
+                        </p>
+                        <p>
+                          Ra mắt CLB Doanh nhân <br />
+                          họ NGÔ khu vực Miền nam
+                        </p>
+                        <p class="text-[14px] text-[#A8A8A8] pt-[19px]">
+                          August 17, 2022
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-theme">
+                  <div class="owl-controls">
+                    <div class="custom-nav owl-nav"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-full px-4 lg:pr-0">
+            <h1
+              class="text-[24px] font-[700] xl:font-[500] pb-[32px] pt-[33px] text-center xl:text-left xl:text-[40px] xl:font-[500] xl:pt-[34px]">
+              KẾT NỐI GIAO THƯƠNG</h1>
+            <div class="grid lg:grid-cols-9 gap-8">
+              <div class="col-span-full lg:col-span-6">
+                <img class="w-full hidden lg:block" src="/img/hoithao1.png" alt="" />
+                <img class="w-full block lg:hidden" src="/img/hoithao1_mobile.png" alt="" />
+                <p class="text-[18px] text-[#FE4600DE] font-[600] pt-4">
+                  Hội thảo đào tạo
+                </p>
+                <p>
+                  Tham gia hội thảo “Giải pháp huy động nguồn lực đầu tư phát triển
+                  tế xã hội tỉnh bến tre “
+                </p>
+                <p class="text-[14px] text-[#A8A8A8] pt-2">
+                  August 17, 2022
+                </p>
+              </div>
+              <div class="col-span-full lg:col-span-3">
+                <img class="w-full" src="/img/hoithao2.png" alt="" />
+                <p class="text-[18px] text-[#FE4600DE] font-[600] pt-4">
+                  Hội thảo đào tạo
+                </p>
+                <p>
+                  Ra mắt CLB Doanh nhân <br /> họ NGÔ khu vực Miền nam
+                </p>
+                <p class="text-[14px] text-[#A8A8A8] pt-2">
+                  August 17, 2022
+                </p>
+              </div>
+            </div>
+            <div class="grid grid-cols-9 gap-8 mt-8">
+              <div class="col-span-full lg:col-span-3">
+                <img class="w-full" src="/img/hoithao4.png" class="" alt="" />
+                <p class="text-[18px] text-[#FE4600DE] font-[600] pt-[16px]">
+                  Hội thảo đào tạo
+                </p>
+                <p>
+                  Ra mắt CLB Doanh nhân <br />
+                  họ NGÔ khu vực Miền nam
+                </p>
+                <p class="text-[14px] text-[#A8A8A8] pt-2">
+                  August 17, 2022
+                </p>
+              </div>
+              <div class="col-span-full lg:col-span-3">
+                <img class="w-full" src="/img/hoithao5.png" alt="" />
+                <p class="text-[18px] text-[#FE4600DE] font-[600] pt-[16px]">
+                  Hội thảo đào tạo
+                </p>
+                <p>
+                  Ra mắt CLB Doanh nhân <br />
+                  họ NGÔ khu vực Miền nam
+                </p>
+                <p class="text-[14px] text-[#A8A8A8] pt-2">
+                  August 17, 2022
+                </p>
+              </div>
+              <div class="col-span-full lg:col-span-3">
+                <img class="w-full" src="/img/hoithao6.png" alt="" />
+                <p class="text-[18px] text-[#FE4600DE] font-[600] pt-[16px]">
+                  Hội thảo đào tạo
+                </p>
+                <p>
+                  Ra mắt CLB Doanh nhân <br />
+                  họ NGÔ khu vực Miền nam
+                </p>
+                <p class="text-[14px] text-[#A8A8A8] pt-2">
+                  August 17, 2022
+                </p>
+              </div>
+            </div>
+            <p class="pt-[20px] text-[16px] text-[#A8A8A8] xl:ml-[0px] xl:pt-[40px] xl:ml-[0px]">
               <a href="#!">
                 Xem thêm <img class="ml-3 inline" src="/img/Arrow-3.svg">
               </a>
             </p>
           </div>
-          <div class="col-span-full display-block lg:hidden">
-            <!----------Carousel Scrolling Mobile---------------->
-            <div class="visible-mobile">
-              <div class="switch-button-carousel">
-                <div class="icon-button grid grid-cols-7">
-                  <div class="icon2 col-span-2 mx-auto">
-                    <img src="img/icon/cake.svg" alt="">
-                  </div>
-                  <div class="icon2 col-span-3 mx-auto">
-                    <img src="img/icon/user.svg" alt="">
-                  </div>
-                  <div class="icon2 col-span-2 mx-auto">
-                    <img src="img/icon/play.svg" alt="">
-                  </div>
-                </div>
-                <div class="button-switch grid grid-cols-7 mt-1">
-                  <div class="btn icon2 col-span-2">
-                    <button class="w-full" id="birthdayBTN" style="background-color:#FE4600; color: white;">
-                      SINH NHẬT
-                    </button>
-                  </div>
-                  <div class="btn icon2 col-span-3">
-                    <button class="w-full" id="memberBTN">
-                      THÀNH VIÊN MỚI
-                    </button>
-                  </div>
-                  <div class="btn icon2 col-span-2">
-                    <button class="w-full" id="mediaBTN">MEDIA</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="CarouselMobile" id="Birthday">
-              <div class="ScrollPanelMobile">
-                <div class="ScrollContentMobile">
-                  <div class="MobileContent gap-[9rem]">
-                    <div class="min-w-full">
-                    </div>
-                    <div>
-                      <img src="img/man.png" />
-                      <p class="name">NGÔ VIỆT BẮC</p>
-                      <p class="workfield">Lĩnh vực hoạt động</p>
-                      <p class="job">
-                        Tư vấn pháp luật <br />
-                        Bào chữa tại tòa
-                      </p>
-                      <p class="phone">(+84) 908 954 179</p>
-                      <p class="email">luatsungovietbac@gmail.com</p>
-                    </div>
-                    <div>
-                      <img src="img/man.png" />
-                      <p class="name">NGÔ VIỆT BẮC</p>
-                      <p class="workfield">Lĩnh vực hoạt động</p>
-                      <p class="job">
-                        Tư vấn pháp luật <br />
-                        Bào chữa tại tòa
-                      </p>
-                      <p class="phone">(+84) 908 954 179</p>
-                      <p class="email">luatsungovietbac@gmail.com</p>
-                    </div>
-                    <div>
-                      <img src="img/man.png" />
-                      <p class="name">NGÔ VIỆT HÓA</p>
-                      <p class="workfield">Lĩnh vực hoạt động</p>
-                      <p class="job">
-                        Tư vấn pháp luật <br />
-                        Bào chữa tại tòa
-                      </p>
-                      <p class="phone">(+84) 908 954 179</p>
-                      <p class="email">luatsungovietbac@gmail.com</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="CarouselMobile" id="Member" style="display:none">
-              <div class="ScrollPanelMobile">
-                <div class="ScrollContentMobile">
-                  <div class="MobileContent">
-                    <div class="min-w-[100%]">
-                    </div>
-                    <div style="padding-left: 80px">
-                      <img src="img/man.png" />
-                      <p class="name">NGÔ VIỆT BẮC</p>
-                      <p class="workfield">Lĩnh vực hoạt động</p>
-                      <p class="job">
-                        Tư vấn pháp luật <br />
-                        Bào chữa tại tòa
-                      </p>
-                      <p class="phone">(+84) 908 954 179</p>
-                      <p class="email">luatsungovietbac@gmail.com</p>
-                    </div>
-                    <div style="padding-left: 80px">
-                      <img src="img/man.png" />
-                      <p class="name">NGÔ VIỆT BẮC</p>
-                      <p class="workfield">Lĩnh vực hoạt động</p>
-                      <p class="job">
-                        Tư vấn pháp luật <br />
-                        Bào chữa tại tòa
-                      </p>
-                      <p class="phone">(+84) 908 954 179</p>
-                      <p class="email">luatsungovietbac@gmail.com</p>
-                    </div>
-                    <div style="padding-left: 80px">
-                      <img src="img/man.png" />
-                      <p class="name">NGÔ VIỆT HÓA</p>
-                      <p class="workfield">Lĩnh vực hoạt động</p>
-                      <p class="job">
-                        Tư vấn pháp luật <br />
-                        Bào chữa tại tòa
-                      </p>
-                      <p class="phone">(+84) 908 954 179</p>
-                      <p class="email">luatsungovietbac@gmail.com</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="CarouselMobile" id="Media" style="display:none">
-              <div class="ScrollPanelMobile">
-                <div class="ScrollContentMobile">
-                  <div class="MobileContent">
-                    <div class="min-w-[100%]">
-                    </div>
-                    <div style="padding-left: 80px">
-                      <img src="img/tuthien.jpg" />
-                      <p class="name">NGÔ VIỆT BẮC</p>
-                      <p class="workfield">Lĩnh vực hoạt động</p>
-                      <p class="job">
-                        Tư vấn pháp luật <br />
-                        Bào chữa tại tòa
-                      </p>
-                      <p class="phone">(+84) 908 954 179</p>
-                      <p class="email">luatsungovietbac@gmail.com</p>
-                    </div>
-                    <div style="padding-left: 80px">
-                      <img src="img/tuthien.jpg" />
-                      <p class="name">NGÔ VIỆT BẮC</p>
-                      <p class="workfield">Lĩnh vực hoạt động</p>
-                      <p class="job">
-                        Tư vấn pháp luật <br />
-                        Bào chữa tại tòa
-                      </p>
-                      <p class="phone">(+84) 908 954 179</p>
-                      <p class="email">luatsungovietbac@gmail.com</p>
-                    </div>
-                    <div style="padding-left: 80px">
-                      <img src="img/tuthien.jpg" />
-                      <p class="name">NGÔ VIỆT HÓA</p>
-                      <p class="workfield">Lĩnh vực hoạt động</p>
-                      <p class="job">
-                        Tư vấn pháp luật <br />
-                        Bào chữa tại tòa
-                      </p>
-                      <p class="phone">(+84) 908 954 179</p>
-                      <p class="email">luatsungovietbac@gmail.com</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="my-6 bg-[#FE4600] text-center py-4 text-white text-[20px]">
-              <p class="title">NHÀ TÀI TRỢ</p>
-            </div>
-            <div class="visible-mobile">
-              <div class="switch-button-carousel">
-                <div class="grid grid-cols-7">
-                  <div class="icon2 col-span-2 mx-auto">
-                    <img src="img/icon/diamond.svg" alt="">
-                  </div>
-                  <div class="icon2 col-span-3 mx-auto">
-                    <img src="img/icon/gold.svg" alt="">
-                  </div>
-                  <div class="icon2 col-span-2 mx-auto">
-                    <img src="img/icon/silver.svg" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="grid grid-cols-7 mt-1">
-                <div class="btn col-span-2">
-                  <button class="w-full" id="diamondBTN" style="background-color:#FE4600; color: white;">
-                    KIM CƯƠNG </button>
-                </div>
-                <div class="btn col-span-3">
-                  <button class="w-full" id="goldBTN">
-                    VÀNG </button>
-                </div>
-                <div class="btn col-span-2">
-                  <button class="w-full" id="silverBTN">BẠC</button>
-                </div>
-              </div>
-            </div>
-            <div class="CarouselMobile" id="Diamond">
-              <div class="ScrollPanelMobile">
-                <div class="ScrollContentMobile">
-                  <div class="MobileContent">
-                    <div class="min-w-[100%]">
-                    </div>
-                    <div style="padding-left: 80px">
-                      <img src="img/man.png" />
-                      <p class="name">NGÔ VIỆT BẮC</p>
-                      <p class="workfield">Lĩnh vực hoạt động</p>
-                      <p class="job">
-                        Tư vấn pháp luật <br />
-                        Bào chữa tại tòa
-                      </p>
-                      <p class="phone">(+84) 908 954 179</p>
-                      <p class="email">luatsungovietbac@gmail.com</p>
-                    </div>
-                    <div style="padding-left: 80px">
-                      <img src="img/man.png" />
-                      <p class="name">NGÔ VIỆT BẮC</p>
-                      <p class="workfield">Lĩnh vực hoạt động</p>
-                      <p class="job">
-                        Tư vấn pháp luật <br />
-                        Bào chữa tại tòa
-                      </p>
-                      <p class="phone">(+84) 908 954 179</p>
-                      <p class="email">luatsungovietbac@gmail.com</p>
-                    </div>
-                    <div style="padding-left: 80px">
-                      <img src="img/man.png" />
-                      <p class="name">NGÔ VIỆT HÓA</p>
-                      <p class="workfield">Lĩnh vực hoạt động</p>
-                      <p class="job">
-                        Tư vấn pháp luật <br />
-                        Bào chữa tại tòa
-                      </p>
-                      <p class="phone">(+84) 908 954 179</p>
-                      <p class="email">luatsungovietbac@gmail.com</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="CarouselMobile" id="Gold" style="display:none">
-              <div class="ScrollPanelMobile">
-                <div class="ScrollContentMobile">
-                  <div class="MobileContent">
-                    <div class="min-w-[100%]">
-                    </div>
-                    <div style="padding-left: 80px">
-                      <img src="img/man.png" />
-                      <p class="name">NGÔ VIỆT BẮC</p>
-                      <p class="workfield">Lĩnh vực hoạt động</p>
-                      <p class="job">
-                        Tư vấn pháp luật <br />
-                        Bào chữa tại tòa
-                      </p>
-                      <p class="phone">(+84) 908 954 179</p>
-                      <p class="email">luatsungovietbac@gmail.com</p>
-                    </div>
-                    <div style="padding-left: 80px">
-                      <img src="img/man.png" />
-                      <p class="name">NGÔ VIỆT BẮC</p>
-                      <p class="workfield">Lĩnh vực hoạt động</p>
-                      <p class="job">
-                        Tư vấn pháp luật <br />
-                        Bào chữa tại tòa
-                      </p>
-                      <p class="phone">(+84) 908 954 179</p>
-                      <p class="email">luatsungovietbac@gmail.com</p>
-                    </div>
-                    <div style="padding-left: 80px">
-                      <img src="img/man.png" />
-                      <p class="name">NGÔ VIỆT HÓA</p>
-                      <p class="workfield">Lĩnh vực hoạt động</p>
-                      <p class="job">
-                        Tư vấn pháp luật <br />
-                        Bào chữa tại tòa
-                      </p>
-                      <p class="phone">(+84) 908 954 179</p>
-                      <p class="email">luatsungovietbac@gmail.com</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="CarouselMobile" id="Silver" style="display:none">
-              <div class="ScrollPanelMobile">
-                <div class="ScrollContentMobile">
-                  <div class="MobileContent">
-                    <div class="min-w-[100%]">
-                    </div>
-                    <div style="padding-left: 80px">
-                      <img src="img/man.png" />
-                      <p class="name">NGÔ VIỆT BẮC</p>
-                      <p class="workfield">Lĩnh vực hoạt động</p>
-                      <p class="job">
-                        Tư vấn pháp luật <br />
-                        Bào chữa tại tòa
-                      </p>
-                      <p class="phone">(+84) 908 954 179</p>
-                      <p class="email">luatsungovietbac@gmail.com</p>
-                    </div>
-                    <div style="padding-left: 80px">
-                      <img src="img/man.png" />
-                      <p class="name">NGÔ VIỆT BẮC</p>
-                      <p class="workfield">Lĩnh vực hoạt động</p>
-                      <p class="job">
-                        Tư vấn pháp luật <br />
-                        Bào chữa tại tòa
-                      </p>
-                      <p class="phone">(+84) 908 954 179</p>
-                      <p class="email">luatsungovietbac@gmail.com</p>
-                    </div>
-                    <div style="padding-left: 80px">
-                      <img src="img/man.png" />
-                      <p class="name">NGÔ VIỆT BẮC</p>
-                      <p class="workfield">Lĩnh vực hoạt động</p>
-                      <p class="job">
-                        Tư vấn pháp luật <br />
-                        Bào chữa tại tòa
-                      </p>
-                      <p class="phone">(+84) 908 954 179</p>
-                      <p class="email">luatsungovietbac@gmail.com</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-span-full px-4 lg:px-0">
-          <h1
-            class="text-[24px] font-[700] xl:font-[500] pb-[32px] pt-[33px] text-center xl:text-left xl:text-[40px] xl:font-[500] xl:pt-[34px]">
-            LỊCH HOẠT ĐỘNG
-          </h1>
-          <div class="carousel-wrap" id="lich-hoat-dong">
-            <div class="main-content">
-              <div class="owl-carousel owl-theme">
-                <div class="item">
-                  <div>
-                    <img src="/img/guongsang1.png" class="w-full" alt="" />
-                    <div>
-                      <p class="text-[18px] text-[#FE4600DE] font-[600] pt-[16px]">
-                        Gương sáng doanh nhân
-                      </p>
-                      <p>
-                        Ra mắt CLB Doanh nhân <br />
-                        họ NGÔ khu vực Miền nam
-                      </p>
-                      <p class="text-[14px] text-[#A8A8A8] pt-[19px]">
-                        August 17, 2022
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div>
-                    <img src="/img/guongsang2.png" class="w-full" alt="" />
-                    <div>
-                      <p class="text-[18px] text-[#FE4600DE] font-[600] pt-[16px]">
-                        Gương sáng doanh nhân
-                      </p>
-                      <p>
-                        Ra mắt CLB Doanh nhân <br />
-                        họ NGÔ khu vực Miền nam
-                      </p>
-                      <p class="text-[14px] text-[#A8A8A8] pt-[19px]">
-                        August 17, 2022
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div>
-                    <img src="/img/guongsang3.png" class="w-full" alt="" />
-                    <div>
-                      <p class="text-[18px] text-[#FE4600DE] font-[600] pt-[16px]">
-                        Gương sáng doanh nhân
-                      </p>
-                      <p>
-                        Ra mắt CLB Doanh nhân <br />
-                        họ NGÔ khu vực Miền nam
-                      </p>
-                      <p class="text-[14px] text-[#A8A8A8] pt-[19px]">
-                        August 17, 2022
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="owl-theme">
-                <div class="owl-controls">
-                  <div class="custom-nav owl-nav"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-span-full px-4 lg:px-0">
-          <h1
-            class="text-[24px] font-[700] xl:font-[500] pb-[32px] pt-[33px] text-center xl:text-left xl:text-[40px] xl:font-[500] xl:pt-[34px]">
-            KẾT NỐI GIAO THƯƠNG</h1>
-          <div class="grid lg:grid-cols-9 gap-8">
-            <div class="col-span-full lg:col-span-6">
-              <img class="w-full" src="/img/hoithao1.png" alt="" />
-              <p class="text-[18px] text-[#FE4600DE] font-[600] pt-4">
-                Hội thảo đào tạo
-              </p>
-              <p>
-                Tham gia hội thảo “Giải pháp huy động nguồn lực đầu tư phát triển
-                tế xã hội tỉnh bến tre “
-              </p>
-              <p class="text-[14px] text-[#A8A8A8] pt-2">
-                August 17, 2022
-              </p>
-            </div>
-            <div class="col-span-full lg:col-span-3">
-              <img class="w-full" src="/img/hoithao2.png" alt="" />
-              <p class="text-[18px] text-[#FE4600DE] font-[600] pt-4">
-                Hội thảo đào tạo
-              </p>
-              <p>
-                Ra mắt CLB Doanh nhân <br /> họ NGÔ khu vực Miền nam
-              </p>
-              <p class="text-[14px] text-[#A8A8A8] pt-2">
-                August 17, 2022
-              </p>
-            </div>
-          </div>
-          <div class="grid grid-cols-9 gap-8 mt-8">
-            <div class="col-span-full lg:col-span-3">
-              <img class="w-full" src="/img/hoithao4.png" class="" alt="" />
-              <p class="text-[18px] text-[#FE4600DE] font-[600] pt-[16px]">
-                Hội thảo đào tạo
-              </p>
-              <p>
-                Ra mắt CLB Doanh nhân <br />
-                họ NGÔ khu vực Miền nam
-              </p>
-              <p class="text-[14px] text-[#A8A8A8] pt-2">
-                August 17, 2022
-              </p>
-            </div>
-            <div class="col-span-full lg:col-span-3">
-              <img class="w-full" src="/img/hoithao5.png" alt="" />
-              <p class="text-[18px] text-[#FE4600DE] font-[600] pt-[16px]">
-                Hội thảo đào tạo
-              </p>
-              <p>
-                Ra mắt CLB Doanh nhân <br />
-                họ NGÔ khu vực Miền nam
-              </p>
-              <p class="text-[14px] text-[#A8A8A8] pt-2">
-                August 17, 2022
-              </p>
-            </div>
-            <div class="col-span-full lg:col-span-3">
-              <img class="w-full" src="/img/hoithao6.png" alt="" />
-              <p class="text-[18px] text-[#FE4600DE] font-[600] pt-[16px]">
-                Hội thảo đào tạo
-              </p>
-              <p>
-                Ra mắt CLB Doanh nhân <br />
-                họ NGÔ khu vực Miền nam
-              </p>
-              <p class="text-[14px] text-[#A8A8A8] pt-2">
-                August 17, 2022
-              </p>
-            </div>
-          </div>
-          <p class="pt-[20px] text-[16px] text-[#A8A8A8] xl:ml-[0px] xl:pt-[40px] xl:ml-[0px]">
-            <a href="#!">
-              Xem thêm <img class="ml-3 inline" src="/img/Arrow-3.svg">
-            </a>
-          </p>
-        </div>
-        <!-----------GƯƠNG SÁNG DOANH NHÂN------------->
-        <div class="col-span-full px-4 lg:px-0">
-          <h1
-            class="text-[24px] font-[700] xl:font-[500] pb-[32px] pt-[32px] text-center xl:text-left xl:text-[40px] xl:font-[500] xl:pt-[34px]">
-            GƯƠNG SÁNG DOANH NHÂN
-          </h1>
-          <div class="grid grid-cols-9 gap-8">
-            <div class="col-span-full lg:col-span-3">
-              <img class="w-full" src="/img/guongsang1.png" alt="" />
-              <p class="text-[18px] text-[#FE4600DE] font-[600] pt-[16px]">
-                Gương sáng doanh nhân </p>
-              <p>
-                Ra mắt CLB Doanh nhân <br />
-                họ NGÔ khu vực Miền nam
-              </p>
-              <p class="text-[14px] text-[#A8A8A8] pt-[19px]">
-                August 17, 2022
-              </p>
-            </div>
-            <div class="col-span-full lg:col-span-3">
-              <img class="w-full" src="/img/guongsang2.png" alt="" />
-              <p class="text-[18px] text-[#FE4600DE] font-[600] pt-[16px]">
-                Gương sáng doanh nhân </p>
-              <p>
-                Ra mắt CLB Doanh nhân <br />
-                họ NGÔ khu vực Miền nam
-              </p>
-              <p class="text-[14px] text-[#A8A8A8] pt-[19px]">
-                August 17, 2022
-              </p>
-            </div>
-            <div class="col-span-full lg:col-span-3">
-              <img class="w-full" src="/img/guongsang3.png" alt="" />
-              <p class="text-[18px] text-[#FE4600DE] font-[600] pt-[16px]">
-                Gương sáng doanh nhân </p>
-              <p>
-                Ra mắt CLB Doanh nhân <br />
-                họ NGÔ khu vực Miền nam
-              </p>
-              <p class="text-[14px] text-[#A8A8A8] pt-[19px]">
-                August 17, 2022
-              </p>
-            </div>
-          </div>
-        </div>
-        <!----------------------Đối tác hoạt động PC-------------------------->
-        <div class="col-span-full doi-tac-hoat-dong">
-          <div class="grid grid-cols-3 bg-[#F5F5F5] content-center mt-10 rounded-3xl hidden-mobile py-[5rem]">
-            <h1 class="col-span-full mb-10 pb-5 text-[1.5rem] md:text-[2.5rem] font-500 mx-auto">ĐỐI TÁC HOẠT ĐỘNG</h1>
-            <div class="col-span-full px-[8rem] md:px-[4rem]">
-              <div class=" owl-carousel owl-theme">
-                <div class="bg-white rounded-xl px-5 py-8 mx-auto flex flex-col justify-center align-center">
-                  <img class="" src="img/fujiwa.png" />
-                </div>
-                <div class="bg-white rounded-xl px-5 py-8 mx-auto flex flex-col justify-center align-center">
-                  <img class="" src="img/uta.png" />
-                </div>
-                <div class="bg-white rounded-xl px-5 py-8 mx-auto flex flex-col justify-center align-center">
-                  <img class="" src="img/ngpgroup.png" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!----------------------Ban ngành hỗ trợ-------------------------->
-        <div class="col-span-full px-4 lg:px-0">
-          <div class="mt-[80px]">
+          <!-----------GƯƠNG SÁNG DOANH NHÂN------------->
+          <div class="col-span-full px-4 lg:pr-0">
             <h1
-              class="text-[24px] font-[700] xl:font-[500] pb-[32px] pt-[33px] text-center xl:text-left xl:text-[40px] xl:font-[500] xl:pt-[34px]">
-              BAN NGÀNH HỖ TRỢ</h1>
-            <div class="flex flex-col lg:flex-row justify-between rounded-3xl text-center">
-              <div>
-                <p class="mb-[32px] mt-[52px] xl:mb-[56px] text-[#FE4600] text-[20px] font-[600]">Team thiện nguyện
+              class="text-[24px] font-[700] xl:font-[500] pb-[32px] pt-[32px] text-center xl:text-left xl:text-[40px] xl:font-[500] xl:pt-[34px]">
+              GƯƠNG SÁNG DOANH NHÂN
+            </h1>
+            <div class="grid grid-cols-9 gap-8">
+              <div class="col-span-full lg:col-span-3">
+                <img class="w-full" src="/img/guongsang1.png" alt="" />
+                <p class="text-[18px] text-[#FE4600DE] font-[600] pt-[16px]">
+                  Gương sáng doanh nhân </p>
+                <p>
+                  Ra mắt CLB Doanh nhân <br />
+                  họ NGÔ khu vực Miền nam
                 </p>
-                <img class="mx-auto" src="img/qrcode.png" />
+                <p class="text-[14px] text-[#A8A8A8] pt-[19px]">
+                  August 17, 2022
+                </p>
               </div>
-              <div>
-                <p class="mb-[32px] mt-[52px] xl:mb-[56px] text-[#FE4600] text-[20px] font-[600]">Team thiện nguyện
+              <div class="col-span-full lg:col-span-3">
+                <img class="w-full" src="/img/guongsang2.png" alt="" />
+                <p class="text-[18px] text-[#FE4600DE] font-[600] pt-[16px]">
+                  Gương sáng doanh nhân </p>
+                <p>
+                  Ra mắt CLB Doanh nhân <br />
+                  họ NGÔ khu vực Miền nam
                 </p>
-                <img class="mx-auto" src="img/qrcode.png" />
+                <p class="text-[14px] text-[#A8A8A8] pt-[19px]">
+                  August 17, 2022
+                </p>
               </div>
-              <div>
-                <p class="mb-[32px] mt-[52px] xl:mb-[56px] text-[#FE4600] text-[20px] font-[600]">Team thiện nguyện
+              <div class="col-span-full lg:col-span-3">
+                <img class="w-full" src="/img/guongsang3.png" alt="" />
+                <p class="text-[18px] text-[#FE4600DE] font-[600] pt-[16px]">
+                  Gương sáng doanh nhân </p>
+                <p>
+                  Ra mắt CLB Doanh nhân <br />
+                  họ NGÔ khu vực Miền nam
                 </p>
-                <img class="mx-auto" src="img/qrcode.png" />
+                <p class="text-[14px] text-[#A8A8A8] pt-[19px]">
+                  August 17, 2022
+                </p>
               </div>
-              <div>
-                <p class="mb-[32px] mt-[52px] xl:mb-[56px] text-[#FE4600] text-[20px] font-[600]">Team thiện nguyện
-                </p>
-                <img class="mx-auto" src="img/qrcode.png" />
+            </div>
+          </div>
+          <!----------------------Đối tác hoạt động PC-------------------------->
+          <div class="col-span-full doi-tac-hoat-dong lg:pl-4">
+            <div class="grid grid-cols-3 bg-[#F5F5F5] content-center mt-10 lg:rounded-3xl hidden-mobile py-[5rem]">
+              <h1 class="col-span-full mb-10 pb-5 text-[1.5rem] md:text-[2.5rem] font-500 mx-auto">ĐỐI TÁC HOẠT ĐỘNG</h1>
+              <div class="col-span-full px-[8rem] md:px-[4rem]">
+                <div class=" owl-carousel owl-theme">
+                  <div class="bg-white rounded-xl px-5 py-8 mx-auto flex flex-col justify-center align-center">
+                    <img class="" src="img/fujiwa.png" />
+                  </div>
+                  <div class="bg-white rounded-xl px-5 py-8 mx-auto flex flex-col justify-center align-center">
+                    <img class="" src="img/uta.png" />
+                  </div>
+                  <div class="bg-white rounded-xl px-5 py-8 mx-auto flex flex-col justify-center align-center">
+                    <img class="" src="img/ngpgroup.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!----------------------Ban ngành hỗ trợ-------------------------->
+          <div class="col-span-full px-4 lg:pr-0">
+            <div class="mt-[80px]">
+              <h1
+                class="text-[24px] font-[700] xl:font-[500] pb-[32px] pt-[33px] text-center xl:text-left xl:text-[40px] xl:font-[500] xl:pt-[34px]">
+                BAN NGÀNH HỖ TRỢ</h1>
+              <div class="flex flex-col lg:flex-row justify-between rounded-3xl text-center">
+                <div>
+                  <p class="mb-[32px] mt-[52px] xl:mb-[56px] text-[#FE4600] text-[20px] font-[600]">Team thiện nguyện
+                  </p>
+                  <img class="mx-auto" src="img/qrcode.png" />
+                </div>
+                <div>
+                  <p class="mb-[32px] mt-[52px] xl:mb-[56px] text-[#FE4600] text-[20px] font-[600]">Team thiện nguyện
+                  </p>
+                  <img class="mx-auto" src="img/qrcode.png" />
+                </div>
+                <div>
+                  <p class="mb-[32px] mt-[52px] xl:mb-[56px] text-[#FE4600] text-[20px] font-[600]">Team thiện nguyện
+                  </p>
+                  <img class="mx-auto" src="img/qrcode.png" />
+                </div>
+                <div>
+                  <p class="mb-[32px] mt-[52px] xl:mb-[56px] text-[#FE4600] text-[20px] font-[600]">Team thiện nguyện
+                  </p>
+                  <img class="mx-auto" src="img/qrcode.png" />
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      </div>
-      <!-------------------Carousel Bên Phải--------------------------->
-      <div class="hidden lg:block lg:col-span-3">
-        <div class="hidden-mobile">
-          <div class="Carousel">
-            <div class="CarouselTitle h-[2.875rem]">
-              <img src="img/icon/cake.svg" class="icon" alt="">
-              <p class="title">SINH NHẬT</p>
-            </div>
-            <div class="ScrollPanel">
-              <div class="ScrollContent">
-                <div style="min-height:540px"></div>
-                <div class="Person">
-                  <img src="img/man.png" />
-                  <p class="name">NGÔ VIỆT BẮC</p>
-                  <p class="workfield">Lĩnh vực hoạt động</p>
-                  <p class="job">
-                    Tư vấn pháp luật <br />
-                    Bào chữa tại tòa
-                  </p>
-                  <p class="phone">(+84) 908 954 179</p>
-                  <p class="email">luatsungovietbac@gmail.com</p>
-                </div>
-                <div class="Person">
-                  <img src="img/man.png" />
-                  <p class="name">NGÔ VIỆT BẮC</p>
-                  <p class="workfield">Lĩnh vực hoạt động</p>
-                  <p class="job">
-                    Tư vấn pháp luật <br />
-                    Bào chữa tại tòa
-                  </p>
-                  <p class="phone">(+84) 908 954 179</p>
-                  <p class="email">luatsungovietbac@gmail.com</p>
-                </div>
-                <div class="Person">
-                  <img src="img/man.png" />
-                  <p class="name">NGÔ VIỆT HÓA</p>
-                  <p class="workfield">Lĩnh vực hoạt động</p>
-                  <p class="job">
-                    Tư vấn pháp luật <br />
-                    Bào chữa tại tòa
-                  </p>
-                  <p class="phone">(+84) 908 954 179</p>
-                  <p class="email">luatsungovietbac@gmail.com</p>
-                </div>
+        </div>
+        <!-------------------Carousel Bên Phải--------------------------->
+        <div class="hidden lg:block lg:col-span-3 lg:pr-4">
+          <div class="hidden-mobile">
+            <div class="Carousel">
+              <div class="CarouselTitle h-[2.875rem]">
+                <img src="img/icon/cake.svg" class="icon h-full" alt="">
+                <p class="title">SINH NHẬT</p>
               </div>
-            </div>
-            <div class="CarouselTitle h-[2.875rem]">
-              <img src="img/icon/user.svg" class="icon" alt="">
-              <p class="title">Thành Viên Mới</p>
-            </div>
-            <div class="ScrollPanel">
-              <div class="ScrollContent">
-                <div style="min-height:540px"></div>
-                <div class="Person">
-                  <img src="img/man.png" />
-                  <p class="name">NGÔ VIỆT BẮC</p>
-                  <p class="workfield">Lĩnh vực hoạt động</p>
-                  <p class="job">
-                    Tư vấn pháp luật <br />
-                    Bào chữa tại tòa
-                  </p>
-                  <p class="phone">(+84) 908 954 179</p>
-                  <p class="email">luatsungovietbac@gmail.com</p>
-                </div>
-                <div class="Person">
-                  <img src="img/man.png" />
-                  <p class="name">NGÔ VIỆT BẮC</p>
-                  <p class="workfield">Lĩnh vực hoạt động</p>
-                  <p class="job">
-                    Tư vấn pháp luật <br />
-                    Bào chữa tại tòa
-                  </p>
-                  <p class="phone">(+84) 908 954 179</p>
-                  <p class="email">luatsungovietbac@gmail.com</p>
-                </div>
-                <div class="Person">
-                  <img src="img/man.png" />
-                  <p class="name">NGÔ VIỆT BẮC</p>
-                  <p class="workfield">Lĩnh vực hoạt động</p>
-                  <p class="job">
-                    Tư vấn pháp luật <br />
-                    Bào chữa tại tòa
-                  </p>
-                  <p class="phone">(+84) 908 954 179</p>
-                  <p class="email">luatsungovietbac@gmail.com</p>
-                </div>
-              </div>
-            </div>
-            <div class="CarouselTitle h-[2.875rem]">
-              <img src="img/icon/play.svg" class="icon" alt="">
-              <p class="title">MEDIA</p>
-            </div>
-            <div class="ScrollPanel">
-              <div class="ScrollContent">
-                <div class="Media">
+              <div class="ScrollPanel">
+                <div class="ScrollContent">
                   <div style="min-height:540px"></div>
-                  <img src="img/man.png" />
-                  <p class="activities">Thiện Nguyên</p>
-                  <p class="title">Ra mắt CLB Doanh nhân họ NGÔ khu vực Miền nam</p>
-                  <p class="date">August 17, 2022</p>
-                </div>
-                <div class="Media">
-                  <img src="img/man.png" />
-                  <p class="activities">Thiện Nguyên</p>
-                  <p class="title">Ra mắt CLB Doanh nhân họ NGÔ khu vực Miền nam</p>
-                  <p class="date">August 17, 2022</p>
-                </div>
-                <div class="Media">
-                  <img src="img/man.png" />
-                  <p class="activities">Thiện Nguyên</p>
-                  <p class="title">Ra mắt CLB Doanh nhân họ NGÔ khu vực Miền nam</p>
-                  <p class="date">August 17, 2022</p>
-                </div>
-              </div>
-            </div>
-            <div class="CarouselTitle h-[58px]">
-              <img src="img/icon/donator.svg" class="icon" alt="">
-              <p class="title">NHÀ TÀI TRỢ</p>
-            </div>
-            <div class="CarouselTitleDiamond h-[2.875rem]">
-              <img src="img/icon/diamond.svg" class="icon" alt="">
-              <p class="title">KIM CƯƠNG</p>
-            </div>
-            <div class="ScrollPanel">
-              <div class="ScrollContent">
-                <div style="min-height:540px"></div>
-                <div class="Person">
-                  <img src="img/man.png" />
-                  <p class="name">NGÔ VIỆT BẮC</p>
-                  <p class="workfield">Lĩnh vực hoạt động</p>
-                  <p class="job">
-                    Tư vấn pháp luật <br />
-                    Bào chữa tại tòa
-                  </p>
-                  <p class="phone">(+84) 908 954 179</p>
-                  <p class="email">luatsungovietbac@gmail.com</p>
-                </div>
-                <div class="Person">
-                  <img src="img/man.png" />
-                  <p class="name">NGÔ VIỆT BẮC</p>
-                  <p class="workfield">Lĩnh vực hoạt động</p>
-                  <p class="job">
-                    Tư vấn pháp luật <br />
-                    Bào chữa tại tòa
-                  </p>
-                  <p class="phone">(+84) 908 954 179</p>
-                  <p class="email">luatsungovietbac@gmail.com</p>
-                </div>
-                <div class="Person">
-                  <img src="img/man.png" />
-                  <p class="name">NGÔ VIỆT HÓA</p>
-                  <p class="workfield">Lĩnh vực hoạt động</p>
-                  <p class="job">
-                    Tư vấn pháp luật <br />
-                    Bào chữa tại tòa
-                  </p>
-                  <p class="phone">(+84) 908 954 179</p>
-                  <p class="email">luatsungovietbac@gmail.com</p>
+                  <div class="Person">
+                    <img src="img/man.png" />
+                    <p class="name">NGÔ VIỆT BẮC</p>
+                    <p class="workfield">Lĩnh vực hoạt động</p>
+                    <p class="job">
+                      Tư vấn pháp luật <br />
+                      Bào chữa tại tòa
+                    </p>
+                    <p class="phone"> <i class="fa fa-phone fa-sm" aria-hidden="true"></i> (+84) 908 954 179</p>
+                    <p class="email"><i class="fa fa-at fa-sm" aria-hidden="true"></i>luatsungovietbac@gmail.com</p>
+                  </div>
+                  <div class="Person">
+                    <img src="img/man.png" />
+                    <p class="name">NGÔ VIỆT BẮC</p>
+                    <p class="workfield">Lĩnh vực hoạt động</p>
+                    <p class="job">
+                      Tư vấn pháp luật <br />
+                      Bào chữa tại tòa
+                    </p>
+                    <p class="phone"><i class="fa fa-phone fa-sm" style="color: black;" aria-hidden="true"></i>(+84) 908 954 179</p>
+                    <p class="email"><i class="fa fa-at fa-sm" aria-hidden="true"></i>luatsungovietbac@gmail.com</p>
+                  </div>
+                  <div class="Person">
+                    <img src="img/man.png" />
+                    <p class="name">NGÔ VIỆT HÓA</p>
+                    <p class="workfield">Lĩnh vực hoạt động</p>
+                    <p class="job">
+                      Tư vấn pháp luật <br />
+                      Bào chữa tại tòa
+                    </p>
+                    <p class="phone"><i class="fa fa-phone fa-sm" style="color: black;" aria-hidden="true"></i>(+84) 908 954 179</p>
+                    <p class="email"><i class="fa fa-at fa-sm" aria-hidden="true"></i>luatsungovietbac@gmail.com</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="CarouselTitleGold h-[2.875rem]">
-              <img src="img/icon/gold.svg" class="icon" alt="">
-              <p class="title">Vàng</p>
-            </div>
-            <div class="ScrollPanel">
-              <div class="ScrollContent">
-                <div style="min-height:540px"></div>
-                <div class="Person">
-                  <img src="img/man.png" />
-                  <p class="name">NGÔ VIỆT BẮC</p>
-                  <p class="workfield">Lĩnh vực hoạt động</p>
-                  <p class="job">
-                    Tư vấn pháp luật <br />
-                    Bào chữa tại tòa
-                  </p>
-                  <p class="phone">(+84) 908 954 179</p>
-                  <p class="email">luatsungovietbac@gmail.com</p>
-                </div>
-                <div class="Person">
-                  <img src="img/man.png" />
-                  <p class="name">NGÔ VIỆT BẮC</p>
-                  <p class="workfield">Lĩnh vực hoạt động</p>
-                  <p class="job">
-                    Tư vấn pháp luật <br />
-                    Bào chữa tại tòa
-                  </p>
-                  <p class="phone">(+84) 908 954 179</p>
-                  <p class="email">luatsungovietbac@gmail.com</p>
-                </div>
-                <div class="Person">
-                  <img src="img/man.png" />
-                  <p class="name">NGÔ VIỆT HÓA</p>
-                  <p class="workfield">Lĩnh vực hoạt động</p>
-                  <p class="job">
-                    Tư vấn pháp luật <br />
-                    Bào chữa tại tòa
-                  </p>
-                  <p class="phone">(+84) 908 954 179</p>
-                  <p class="email">luatsungovietbac@gmail.com</p>
+              <div class="CarouselTitle h-[2.875rem]">
+                <img src="img/icon/user.svg" class="icon h-full" alt="">
+                <p class="title">Thành Viên Mới</p>
+              </div>
+              <div class="ScrollPanel">
+                <div class="ScrollContent">
+                  <div style="min-height:540px"></div>
+                  <div class="Person">
+                    <img src="img/man.png" />
+                    <p class="name">NGÔ VIỆT BẮC</p>
+                    <p class="workfield">Lĩnh vực hoạt động</p>
+                    <p class="job">
+                      Tư vấn pháp luật <br />
+                      Bào chữa tại tòa
+                    </p>
+                    <p class="phone"> <i class="fa fa-phone fa-sm" aria-hidden="true"></i> (+84) 908 954 179</p>
+                    <p class="email"><i class="fa fa-at fa-sm" aria-hidden="true"></i>luatsungovietbac@gmail.com</p>
+                  </div>
+                  <div class="Person">
+                    <img src="img/man.png" />
+                    <p class="name">NGÔ VIỆT BẮC</p>
+                    <p class="workfield">Lĩnh vực hoạt động</p>
+                    <p class="job">
+                      Tư vấn pháp luật <br />
+                      Bào chữa tại tòa
+                    </p>
+                    <p class="phone"> <i class="fa fa-phone fa-sm" aria-hidden="true"></i> (+84) 908 954 179</p>
+                    <p class="email"><i class="fa fa-at fa-sm" aria-hidden="true"></i>luatsungovietbac@gmail.com</p>
+                  </div>
+                  <div class="Person">
+                    <img src="img/man.png" />
+                    <p class="name">NGÔ VIỆT BẮC</p>
+                    <p class="workfield">Lĩnh vực hoạt động</p>
+                    <p class="job">
+                      Tư vấn pháp luật <br />
+                      Bào chữa tại tòa
+                    </p>
+                    <p class="phone"> <i class="fa fa-phone fa-sm" aria-hidden="true"></i> (+84) 908 954 179</p>
+                    <p class="email"><i class="fa fa-at fa-sm" aria-hidden="true"></i>luatsungovietbac@gmail.com</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="CarouselTitleSilver h-[2.875rem]">
-              <img src="img/icon/silver.svg" class="icon" alt="">
-              <p class="title">BẠC</p>
-            </div>
-            <div class="ScrollPanel">
-              <div class="ScrollContent">
-                <div style="min-height:540px"></div>
-                <div class="Person">
-                  <img src="img/man.png" />
-                  <p class="name">NGÔ VIỆT BẮC</p>
-                  <p class="workfield">Lĩnh vực hoạt động</p>
-                  <p class="job">
-                    Tư vấn pháp luật <br />
-                    Bào chữa tại tòa
-                  </p>
-                  <p class="phone">(+84) 908 954 179</p>
-                  <p class="email">luatsungovietbac@gmail.com</p>
-                </div>
-                <div class="Person">
-                  <img src="img/man.png" />
-                  <p class="name">NGÔ VIỆT BẮC</p>
-                  <p class="workfield">Lĩnh vực hoạt động</p>
-                  <p class="job">
-                    Tư vấn pháp luật <br />
-                    Bào chữa tại tòa
-                  </p>
-                  <p class="phone">(+84) 908 954 179</p>
-                  <p class="email">luatsungovietbac@gmail.com</p>
-                </div>
-                <div class="Person">
-                  <img src="img/man.png" />
-                  <p class="name">NGÔ VIỆT HÓA</p>
-                  <p class="workfield">Lĩnh vực hoạt động</p>
-                  <p class="job">
-                    Tư vấn pháp luật <br />
-                    Bào chữa tại tòa
-                  </p>
-                  <p class="phone">(+84) 908 954 179</p>
-                  <p class="email">luatsungovietbac@gmail.com</p>
+              <div class="CarouselTitle h-[2.875rem]">
+                <img src="img/icon/play.svg" class="icon h-full" alt="">
+                <p class="title">MEDIA</p>
+              </div>
+              <div class="ScrollPanel">
+                <div class="ScrollContent">
+                  <div class="Media">
+                    <div style="min-height:540px"></div>
+                    <img src="img/tuthien.jpg" />
+                    <p class="activities">Thiện Nguyên</p>
+                    <p class="title">Ra mắt CLB Doanh nhân họ NGÔ khu vực Miền nam</p>
+                    <p class="date">August 17, 2022</p>
+                  </div>
+                  <div class="Media">
+                    <img src="img/tuthien.jpg" />
+                    <p class="activities">Thiện Nguyên</p>
+                    <p class="title">Ra mắt CLB Doanh nhân họ NGÔ khu vực Miền nam</p>
+                    <p class="date">August 17, 2022</p>
+                  </div>
+                  <div class="Media">
+                    <img src="img/tuthien.jpg" />
+                    <p class="activities">Thiện Nguyên</p>
+                    <p class="title">Ra mắt CLB Doanh nhân họ NGÔ khu vực Miền nam</p>
+                    <p class="date">August 17, 2022</p>
+                  </div>
                 </div>
               </div>
+              <div class="CarouselTitle h-[58px]">
+                <img src="img/icon/donator.svg" class="w-auto icon h-full" alt="">
+                <p class="title">NHÀ TÀI TRỢ</p>
+              </div>
+              <div class="CarouselTitleDiamond h-[2.875rem]">
+                <img src="img/icon/diamond.svg" class="icon h-full" alt="">
+                <p class="title">KIM CƯƠNG</p>
+              </div>
+              <div class="ScrollPanel">
+                <div class="ScrollContent">
+                  <div style="min-height:540px"></div>
+                  <div class="Person">
+                    <img src="img/man.png" />
+                    <p class="name">NGÔ VIỆT BẮC</p>
+                    <p class="workfield">Lĩnh vực hoạt động</p>
+                    <p class="job">
+                      Tư vấn pháp luật <br />
+                      Bào chữa tại tòa
+                    </p>
+                    <p class="phone"> <i class="fa fa-phone fa-sm" aria-hidden="true"></i> (+84) 908 954 179</p>
+                    <p class="email"><i class="fa fa-at fa-sm" aria-hidden="true"></i>luatsungovietbac@gmail.com</p>
+                  </div>
+                  <div class="Person">
+                    <img src="img/man.png" />
+                    <p class="name">NGÔ VIỆT BẮC</p>
+                    <p class="workfield">Lĩnh vực hoạt động</p>
+                    <p class="job">
+                      Tư vấn pháp luật <br />
+                      Bào chữa tại tòa
+                    </p>
+                    <p class="phone"> <i class="fa fa-phone fa-sm" aria-hidden="true"></i> (+84) 908 954 179</p>
+                    <p class="email"><i class="fa fa-at fa-sm" aria-hidden="true"></i>luatsungovietbac@gmail.com</p>
+                  </div>
+                  <div class="Person">
+                    <img src="img/man.png" />
+                    <p class="name">NGÔ VIỆT HÓA</p>
+                    <p class="workfield">Lĩnh vực hoạt động</p>
+                    <p class="job">
+                      Tư vấn pháp luật <br />
+                      Bào chữa tại tòa
+                    </p>
+                    <p class="phone"> <i class="fa fa-phone fa-sm" aria-hidden="true"></i> (+84) 908 954 179</p>
+                    <p class="email"><i class="fa fa-at fa-sm" aria-hidden="true"></i>luatsungovietbac@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+              <div class="CarouselTitleGold h-[2.875rem]">
+                <img src="img/icon/gold.svg" class="icon h-full" alt="">
+                <p class="title">Vàng</p>
+              </div>
+              <div class="ScrollPanel">
+                <div class="ScrollContent">
+                  <div style="min-height:540px"></div>
+                  <div class="Person">
+                    <img src="img/man.png" />
+                    <p class="name">NGÔ VIỆT BẮC</p>
+                    <p class="workfield">Lĩnh vực hoạt động</p>
+                    <p class="job">
+                      Tư vấn pháp luật <br />
+                      Bào chữa tại tòa
+                    </p>
+                    <p class="phone"> <i class="fa fa-phone fa-sm" aria-hidden="true"></i> (+84) 908 954 179</p>
+                    <p class="email"><i class="fa fa-at fa-sm" aria-hidden="true"></i>luatsungovietbac@gmail.com</p>
+                  </div>
+                  <div class="Person">
+                    <img src="img/man.png" />
+                    <p class="name">NGÔ VIỆT BẮC</p>
+                    <p class="workfield">Lĩnh vực hoạt động</p>
+                    <p class="job">
+                      Tư vấn pháp luật <br />
+                      Bào chữa tại tòa
+                    </p>
+                    <p class="phone"> <i class="fa fa-phone fa-sm" aria-hidden="true"></i> (+84) 908 954 179</p>
+                    <p class="email"><i class="fa fa-at fa-sm" aria-hidden="true"></i>luatsungovietbac@gmail.com</p>
+                  </div>
+                  <div class="Person">
+                    <img src="img/man.png" />
+                    <p class="name">NGÔ VIỆT HÓA</p>
+                    <p class="workfield">Lĩnh vực hoạt động</p>
+                    <p class="job">
+                      Tư vấn pháp luật <br />
+                      Bào chữa tại tòa
+                    </p>
+                    <p class="phone"> <i class="fa fa-phone fa-sm" aria-hidden="true"></i> (+84) 908 954 179</p>
+                    <p class="email"><i class="fa fa-at fa-sm" aria-hidden="true"></i>luatsungovietbac@gmail.com</p>
+                </div>
+              </div>
+              </div>
+              <div class="CarouselTitleSilver h-[2.875rem]">
+                <img src="img/icon/silver.svg" class="icon h-full" alt="">
+                <p class="title">BẠC</p>
+              </div>
+              <div class="ScrollPanel">
+                <div class="ScrollContent">
+                  <div style="min-height:540px"></div>
+                  <div class="Person">
+                    <img src="img/man.png" />
+                    <p class="name">NGÔ VIỆT BẮC</p>
+                    <p class="workfield">Lĩnh vực hoạt động</p>
+                    <p class="job">
+                      Tư vấn pháp luật <br />
+                      Bào chữa tại tòa
+                    </p>
+                    <p class="phone">(+84) 908 954 179</p>
+                    <p class="email">luatsungovietbac@gmail.com</p>
+                  </div>
+                  <div class="Person">
+                    <img src="img/man.png" />
+                    <p class="name">NGÔ VIỆT BẮC</p>
+                    <p class="workfield">Lĩnh vực hoạt động</p>
+                    <p class="job">
+                      Tư vấn pháp luật <br />
+                      Bào chữa tại tòa
+                    </p>
+                    <p class="phone">(+84) 908 954 179</p>
+                    <p class="email">luatsungovietbac@gmail.com</p>
+                  </div>
+                  <div class="Person">
+                    <img src="img/man.png" />
+                    <p class="name">NGÔ VIỆT HÓA</p>
+                    <p class="workfield">Lĩnh vực hoạt động</p>
+                    <p class="job">
+                      Tư vấn pháp luật <br />
+                      Bào chữa tại tòa
+                    </p>
+                    <p class="phone">(+84) 908 954 179</p>
+                    <p class="email">luatsungovietbac@gmail.com</p>
+                  </div>
+                </div>
             </div>
+        </div>
+      </main>
+    </section>
+  <footer class="mt-[7.5rem] w-full bg-[#F5F5F5]">
+    <div class="footer-content mx-auto max-w-screen-xl px-4">
+      <div class="pt-10 pb-7 lg:text-left">
+        <div class="grid grid-cols-12 gap-8">
+          <div class="col-span-full md:col-span-5 content flex flex-col justify-between gap-8">
+            <div class="img-logo"><a href="#"><img src="img/Logo.png" /></a></div>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s.
+            </p>
+            <p>STK hỗ trợ: </p>
+            <p class="flex items-center justify-start lg:justify-start">
+              <img class="w-4 mr-4" src="img/Vector-2.svg" viewBox="0 0 512 512" />
+              (+84) 908 954 179
+            </p>
+            <p class="flex items-center justify-start lg:justify-start">
+              <img class="w-4 mr-4" src="img/Vector-3.svg" viewBox="0 0 512 512" />
+              luatsungovietbac@gmail.com
+            </p>
+            <p class="flex items-center justify-start lg:justify-start">
+              <img class="w-4 mr-4" src="img/Group.svg" viewBox="0 0 512 512" />
+              455b/14b, Khu vực 8, Phường An Khánh, Quận Ninh Kiều, Thành phố Cần Thơ
+            </p>
           </div>
-        </div>
-      </div>
-    </main>
-  </section>
-  <footer class="mt-[7.5rem] p-6 mx-auto w-full max-w-screen-2xl bg-[#F5F5F5]">
-    <div class="mx-6 py-10 lg:text-left">
-      <div class="grid grid-1 md:grid-cols-2 md:grid-cols-3 gap-8">
-        <div class="content flex flex-col justify-between gap-8">
-          <div class="img-logo"><a href="#"><img src="img/Logo.png" /></a></div>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s.
-          </p>
-          <p>STK hỗ trợ: </p>
-          <p class="flex items-center justify-start lg:justify-start">
-            <img class="w-4 mr-4" src="img/Vector-2.svg" viewBox="0 0 512 512" />
-            (+84) 908 954 179
-          </p>
-          <p class="flex items-center justify-start lg:justify-start">
-            <img class="w-4 mr-4" src="img/Vector-3.svg" viewBox="0 0 512 512" />
-            luatsungovietbac@gmail.com
-          </p>
-          <p class="flex items-center justify-start lg:justify-start">
-            <img class="w-4 mr-4" src="img/Group.svg" viewBox="0 0 512 512" />
-            455b/14b, Khu vực 8, Phường An Khánh, Quận Ninh Kiều, Thành phố Cần Thơ
-          </p>
-        </div>
-        <div class="md:mt-20 flex flex-col gap-4">
-          <p class="flex justify-start mb-4">
-            <a href="#!" class="text-gray-600">Danh sách hội viên</a>
-          </p>
-          <p class="flex justify-start mb-4">
-            <a href="#!" class="text-gray-600">Quy chế hội viên</a>
-          </p>
-          <p class="flex justify-start mb-4">
-            <a href="#!" class="text-gray-600">Quyền lợi hội viên</a>
-          </p>
-          <p class="flex justify-start mb-4">
-            <a href="#!" class="text-gray-600">Kết nối giao thương</a>
-          </p>
-          <p class="flex justify-start">
-            <a href="#!" class="text-gray-600">Góc việc làm</a>
-          </p>
-        </div>
-        <div class="content flex flex-col justify-around">
-          <form action="">
-            <div class="md:ml-auto">
+          <div class="col-span-full md:col-span-3 md:mt-20 flex flex-col gap-4 md:mx-auto">
+            <p class="flex justify-start mb-4">
+              <a href="#!" class="text-gray-600">Danh sách hội viên</a>
+            </p>
+            <p class="flex justify-start mb-4">
+              <a href="#!" class="text-gray-600">Quy chế hội viên</a>
+            </p>
+            <p class="flex justify-start mb-4">
+              <a href="#!" class="text-gray-600">Quyền lợi hội viên</a>
+            </p>
+            <p class="flex justify-start mb-4">
+              <a href="#!" class="text-gray-600">Kết nối giao thương</a>
+            </p>
+            <p class="flex justify-start">
+              <a href="#!" class="text-gray-600">Góc việc làm</a>
+            </p>
+          </div>
+          <div class="col-span-full md:col-span-4 content flex flex-col gap-4 justify-between">
+            <div class="">
               <p class="text-gray-800">
                 <strong>Đăng kí để theo dõi hoạt động</strong>
               </p>
             </div>
-            <div class="grid grid-cols-2 gird-cols-1 gap-4 flex justify-center items-center">
-              <div class="md:mb-6">
-                <input type="text"
-                  class="form-control block w-full px-3 py-2 text-base text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300
-                   rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                  id="exampleFormControlInput1" placeholder="Enter your email" />
+            <form action="">
+              <div class="grid grid-cols-2 gird-cols-1 gap-4 flex justify-center items-center">
+                <div>
+                  <input type="text"
+                    class="form-control block w-full px-3 py-2 text-base text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300
+                    rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                    id="exampleFormControlInput1" placeholder="Enter your email" />
+                </div>
+                <div>
+                  <button type="button"
+                    class="inline-block px-3 py-2 bg-[#FE4600] text-white btn-sign-up rounded shadow-md hover:shadow-lg focus:bg-orange-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-orange-600 active:shadow-lg transition duration-150">Đăng
+                    kí</button>
+                </div>
               </div>
-
-              <div class="md:mr-auto mb-6">
-                <button type="button"
-                  class="inline-block mt-6 md:mb-6 md:mb-6 px-3 py-2 bg-[#FE4600] text-white btn-sign-up rounded shadow-md hover:shadow-lg focus:bg-orange-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-orange-600 active:shadow-lg transition duration-150">Đăng
-                  kí</button>
-              </div>
+            </form>
+            <p class="text-[12px]">Bằng cách đăng ký, bạn đồng ý với Chính sách quyền riêng tư của chúng tôi. </p>
+            <div class="img-logo">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d244.91840281122262!2d106.73070349184675!3d10.834679077786944!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd709668955894af2!2zMTDCsDUwJzA0LjgiTiAxMDbCsDQzJzUwLjciRQ!5e0!3m2!1sen!2s!4v1663393149465!5m2!1sen!2s"
+                width="100%" height="227" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-          </form>
-          <p class="text-[12px] mb-4">Bằng cách đăng ký, bạn đồng ý với Chính sách quyền riêng tư của chúng tôi. </p>
-          <div class="img-logo">
-            <iframe width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-              src="https://maps.google.com/maps?q=10.834660%2C%20106.730749&amp;t=m&amp;z=15&amp;output=embed&amp;iwloc=near"
-              aria-label="10.834660, 106.730749"></iframe>
           </div>
         </div>
       </div>
-    </div>
-    </div>
-    <div>
-      <div class="flex justify-between p-6 border-t border-gray-300">
-        <div class="flex justify-center">
-          <a href="#" class="mr-6 text-gray-600">
-            <img src="img/icon-fb.svg" />
-          </a>
-          <a href="#" class="mr-6 text-gray-600">
-            <img src="img/icon-instagram.svg" />
-          </a>
-          <a href="#" class="mr-6 text-gray-600">
-            <img src="img/icon-tw.svg" />
-          </a>
-          <a href="#" class="mr-6 text-gray-600">
-            <img src="img/icon-in.svg" />
-          </a>
-        </div>
-        <div class="flex justify-end">
-          <span class="text-[13px] text-right">©2022, All right reserved.</span>
+      <div>
+        <div class="flex justify-between py-6 border-t border-gray-300">
+          <div class="flex justify-center">
+            <a href="#" class="mr-6 text-gray-600">
+              <img src="img/icon-fb.svg" />
+            </a>
+            <a href="#" class="mr-6 text-gray-600">
+              <img src="img/icon-instagram.svg" />
+            </a>
+            <a href="#" class="mr-6 text-gray-600">
+              <img src="img/icon-tw.svg" />
+            </a>
+            <a href="#" class="mr-6 text-gray-600">
+              <img src="img/icon-in.svg" />
+            </a>
+          </div>
+          <div class="flex justify-end">
+            <span class="text-[13px] text-right">©2022, All right reserved.</span>
+          </div>
         </div>
       </div>
     </div>

@@ -11,7 +11,7 @@ header {
   }
   
   #menu li {
-    padding-top: 0.5rem;
+    padding-top: 1rem;
   }
   
   .dropdown-content {
@@ -19,11 +19,12 @@ header {
     position: absolute;
     background-color: white;
     min-width: 160px;
-    margin-top: 9.5%;
+    margin-top: 0.3rem;
     /* padding: 12px 16px; */
     z-index: 1;
     border-radius: 4px;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.16);
+    padding-bottom: 1rem;
   }
   .bar1,
   .bar2,
@@ -54,7 +55,6 @@ header {
     margin-top: 5%;
   }
   
-  
   @media screen and (min-width: 1024px) {
     .dropdown:hover .dropdown-content {
       display: block;
@@ -65,6 +65,12 @@ header {
   }
   
   @media screen and (max-width: 1023px){
+    #menu li {
+        padding-top: 0rem;
+    }
+    #menu .dropdown-content li {
+        padding-top: 1.5rem;
+    }
     #menu {
       display: none;
       position: absolute;
@@ -81,12 +87,13 @@ header {
       position: absolute;
       width: 14px;
       height: 8px;
-      top: 1.1rem;
+      top: 0.6rem;
       left: 8rem;
     } 
     .dropdown-content {
       list-style: none;
       padding-left: 2rem;
+      padding-right: 0;
     }
   
     .dropdown .dropdown-content {
@@ -101,6 +108,10 @@ body {
         Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-style: normal;
 }
+p {
+    font-weight: 500;
+    letter-spacing: 0.01em;
+}
 
 .ScrollPanel {
     /* width: 303px; */
@@ -112,8 +123,8 @@ body {
 .ScrollPanel img {
     margin: auto;
     display: block;
-    /* width: 275px;
-    height: 276px; */
+     width: 275px;
+    height: auto; 
     border-top: 1px solid black;
 }
 
@@ -144,7 +155,7 @@ body {
     }
 
     to {
-        top: -1800px;
+        top: -1900px;
     }
 }
 
@@ -154,7 +165,7 @@ body {
     }
 
     to {
-        top: -1800px;
+        top: -1900px;
     }
 }
 
@@ -164,7 +175,7 @@ body {
     }
 
     to {
-        top: -1800px;
+        top: -1900px;
     }
 }
 
@@ -174,7 +185,7 @@ body {
     }
 
     to {
-        top: -1800px;
+        top: -1900px;
     }
 }
 
@@ -184,10 +195,13 @@ body {
     }
 
     to {
-        top: -1800px;
+        top: -1900px;
     }
 }
-
+.fa {
+    color: black;
+    padding-right: 4px;
+}
 
 .Person p {
     text-align: center;
@@ -211,23 +225,26 @@ body {
 }
 
 .Person .job {
-    padding-top: 10px;
+    padding-top:  6px;
     font-size: 14px;
-    line-height: 22px;
+    line-height: 20px;
     color: #292929;
     letter-spacing: 0.005em;
 }
 
 .Person .phone {
+    
+    padding-top: 6px;
     font-size: 12px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 14px;
     color: #292929;
 
 }
 
 .Person .email {
-    font-weight: 400;
+    padding-top: 8px;
+    font-weight: 500;
     font-size: 12px;
     line-height: 14px;
     color: #292929;
@@ -247,7 +264,7 @@ body {
     padding-top: 10px;
     color: rgba(0, 0, 0, 0.87);
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 24px;
     padding-left: 14px;
 }
@@ -270,7 +287,7 @@ body {
     align-items: center;
     /* height: 46px;
     width: 303px; */
-    background: linear-gradient(90deg, white 20%, #fe4600 0%);
+    background:  #fe4600 0%;
     border-top: 1px #fe4600 solid;
     border-left: 1px #fe4600 solid;
     text-align: center;
@@ -285,7 +302,7 @@ body {
     align-items: center;
     /* height: 46px; */
     /* width: 303px; */
-    background: linear-gradient(90deg, white 20%, #757575 0%);
+    background: #757575 0%;
     border-top: 1px #757575 solid;
     border-left: 1px #757575 solid;
     text-align: center;
@@ -299,7 +316,7 @@ body {
     align-items: center;
     /* height: 46px; */
     width: 100%;
-    background: linear-gradient(90deg, white 20%, #feb700 0%);
+    background:  #feb700;
     border-top: 1px #feb700 solid;
     border-left: 1px #feb700 solid;
     text-align: center;
@@ -313,7 +330,7 @@ body {
     align-items: center;
     /* height: 46px;
     width: 303px; */
-    background: linear-gradient(90deg, white 20%, #e0e0e0 0%);
+    background: #e0e0e0 0%;
     border-top: 1px #e0e0e0 solid;
     border-left: 1px #e0e0e0 solid;
     text-align: center;
@@ -327,26 +344,31 @@ body {
 }
 
 .icon {
-    margin-left: 13px;
-    width: 35px;
+    background-color: white;
+    width: 15%;
+    display: block;
+    align-items: center;
     color: #fe4600;
 }
 
 .ScrollPanelMobile {
     margin:auto;
     /* width: 375px; */
-    /* height: 500px; */
+     height: 490px; 
     border: 1px solid #fe4600;
     overflow: hidden;
+   
 }
 
-/* .MobileContent img {
-    width: 480px;
-    height: 276px;
-} */
+ .MobileContent img {
+   
+    width: 275px;
+    max-width: none;
+
+} 
 
 .MobileContent {
-
+    padding-top: 14px;
     display: flex;
     /* width: 480px;
     height: 460px; */
@@ -371,21 +393,21 @@ body {
 
 .MobileContent .job {
     padding-top: 8px;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 20px;
 }
 
 .MobileContent .phone {
     padding-top: 10px;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 12px;
     line-height: 14px;
 }
 
 .MobileContent .email {
     padding-top: 10px;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 12px;
     line-height: 14px;
 }
@@ -405,6 +427,7 @@ body {
     -ms-animation-play-state: paused;
     -moz-animation-play-state: paused;
     -webkit-animation-play-state: paused;
+    
 }
 
 @keyframes ScrollingMobile {
